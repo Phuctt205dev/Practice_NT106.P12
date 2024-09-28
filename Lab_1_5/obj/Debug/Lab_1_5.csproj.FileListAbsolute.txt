@@ -18,3 +18,13 @@ D:\Files C# VS (Purple)\Practice Class\Lab_1_5\obj\Debug\Lab_1_5.csproj.Generate
 D:\Files C# VS (Purple)\Practice Class\Lab_1_5\obj\Debug\Lab_1_5.csproj.CoreCompileInputs.cache
 D:\Files C# VS (Purple)\Practice Class\Lab_1_5\obj\Debug\Lab_1_5.exe
 D:\Files C# VS (Purple)\Practice Class\Lab_1_5\obj\Debug\Lab_1_5.pdb
+C:\Users\PHUONG NGHI\Downloads\Practice_NT106.P12-master\Practice_NT106.P12-master\Lab_1_5\obj\Debug\Lab_1_5.csproj.AssemblyReference.cache
+C:\Users\PHUONG NGHI\Downloads\Practice_NT106.P12-master\Practice_NT106.P12-master\Lab_1_5\obj\Debug\Lab_1_5.Form1.resources
+C:\Users\PHUONG NGHI\Downloads\Practice_NT106.P12-master\Practice_NT106.P12-master\Lab_1_5\obj\Debug\Lab_1_5.Properties.Resources.resources
+C:\Users\PHUONG NGHI\Downloads\Practice_NT106.P12-master\Practice_NT106.P12-master\Lab_1_5\obj\Debug\Lab_1_5.csproj.GenerateResource.cache
+C:\Users\PHUONG NGHI\Downloads\Practice_NT106.P12-master\Practice_NT106.P12-master\Lab_1_5\obj\Debug\Lab_1_5.csproj.CoreCompileInputs.cache
+C:\Users\PHUONG NGHI\Downloads\Practice_NT106.P12-master\Practice_NT106.P12-master\Lab_1_5\obj\Debug\Lab_1_5.exe
+C:\Users\PHUONG NGHI\Downloads\Practice_NT106.P12-master\Practice_NT106.P12-master\Lab_1_5\obj\Debug\Lab_1_5.pdb
+C:\Users\PHUONG NGHI\Downloads\Practice_NT106.P12-master\Practice_NT106.P12-master\Lab_1_5\bin\Debug\Lab_1_5.exe.config
+C:\Users\PHUONG NGHI\Downloads\Practice_NT106.P12-master\Practice_NT106.P12-master\Lab_1_5\bin\Debug\Lab_1_5.exe
+C:\Users\PHUONG NGHI\Downloads\Practice_NT106.P12-master\Practice_NT106.P12-master\Lab_1_5\bin\Debug\Lab_1_5.pdb

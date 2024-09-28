@@ -15,8 +15,27 @@ namespace Lab_1_5
         public Form1()
         {
             InitializeComponent();
+            InitializeComboBoxColumn();  // Tạo cột ComboBox cho giới tính
+            dataGridView1.DataError += dataGridView1_DataError;  // Gắn sự kiện xử lý lỗi
         }
 
+        // Tạo cột ComboBox và thêm các giá trị hợp lệ (Nam, Nữ)
+        private void InitializeComboBoxColumn()
+        {
+            // Tạo cột ComboBox
+            DataGridViewComboBoxColumn comboBoxColumn = new DataGridViewComboBoxColumn
+            {
+                HeaderText = "Giới tính",  // Tiêu đề cột
+                Name = "GenderColumn"  // Tên cột để dễ dàng truy cập
+            };
+
+            // Thêm giá trị cho cột ComboBox
+            comboBoxColumn.Items.Add("Nam");
+            comboBoxColumn.Items.Add("Nữ");
+
+            // Thêm cột vào DataGridView
+            dataGridView1.Columns.Add(comboBoxColumn);
+        }
         private void button2_Click(object sender, EventArgs e)
         {
 
@@ -44,45 +63,59 @@ namespace Lab_1_5
 
         private void button2_Click_1(object sender, EventArgs e)
         {
+            // Xóa các trường dữ liệu
             txt1.Text = string.Empty;
             txt2.Text = string.Empty;
             txt3.Text = string.Empty;
             txtname.Text = string.Empty;
-            comboxGender.Text = "Gender";
+            comboxGender.SelectedIndex = -1;  // Đặt lại ComboBox
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int num;
-            if (int.TryParse(txt1.Text, out num) && int.TryParse(txt2.Text, out num) && int.TryParse(txt3.Text, out num))
+            int r1, r2, r3;
+            if (int.TryParse(txt1.Text, out r1) && int.TryParse(txt2.Text, out r2) && int.TryParse(txt3.Text, out r3))
             {
                 string name = txtname.Text;
-                string gender = comboxGender.SelectedItem.ToString();
-                int r1 = int.Parse(txt1.Text);
-                int r2 = int.Parse(txt2.Text);
-                int r3 = int.Parse(txt3.Text);
-                double aver = (r1 + r2 + r3) / 3.0;
-                string classify = "";
-                if (aver >= 9)
-                    classify = "Expert";
-                else if (aver >= 7)
-                    classify = "Good";
-                else
-                    classify = "Limited";
-                dataGridView1.Rows.Add("TS001", name, gender, r1, r2, r3, aver, classify);
-            }
-            else
-            {
-                MessageBox.Show("Results cannot be filled with non-numeric characters");
+
+                // Kiểm tra giá trị giới tính
+                string gender = comboxGender.SelectedItem != null ? comboxGender.SelectedItem.ToString() : null;
+
+                if (gender != null)
+                {
+                    double aver = (r1 + r2 + r3) / 3.0;
+                    string classify = "";
+
+                    if (aver >= 9)
+                        classify = "Expert";
+                    else if (aver >= 7)
+                        classify = "Good";
+                    else
+                        classify = "Limited";
+
+                    // Thêm hàng vào DataGridView
+                    dataGridView1.Rows.Add("TS001", name, gender, r1, r2, r3, aver, classify);
+                }
             }
         }
 
+
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-                if (e.ColumnIndex == e.RowIndex) // Check if "Xoá" button is clicked
-                {
-                    dataGridView1.Rows.RemoveAt(e.RowIndex);
-                }
+            // Giả sử cột nút xóa là cột cuối cùng
+            int deleteButtonColumnIndex = dataGridView1.ColumnCount - 1;
+
+            if (e.ColumnIndex == deleteButtonColumnIndex && e.RowIndex >= 0)  // Nếu cột là cột nút "Xoá"
+            {
+                dataGridView1.Rows.RemoveAt(e.RowIndex);  // Xoá hàng tại chỉ số đó
+            }
+        }
+
+        // Xử lý sự kiện DataError để tránh lỗi mặc định
+        private void dataGridView1_DataError(object sender, DataGridViewDataErrorEventArgs e)
+        {
+
+            e.ThrowException = false;  // Ngăn chặn hiển thị hộp thoại lỗi mặc định
         }
     }
 }
