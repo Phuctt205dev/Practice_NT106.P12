@@ -1,0 +1,16 @@
+D:\Lab01\Bai02\bin\Debug\net8.0-windows\Bai02.exe
+D:\Lab01\Bai02\bin\Debug\net8.0-windows\Bai02.deps.json
+D:\Lab01\Bai02\bin\Debug\net8.0-windows\Bai02.runtimeconfig.json
+D:\Lab01\Bai02\bin\Debug\net8.0-windows\Bai02.dll
+D:\Lab01\Bai02\bin\Debug\net8.0-windows\Bai02.pdb
+D:\Lab01\Bai02\obj\Debug\net8.0-windows\Bai02.Form1.resources
+D:\Lab01\Bai02\obj\Debug\net8.0-windows\Bai02.csproj.GenerateResource.cache
+D:\Lab01\Bai02\obj\Debug\net8.0-windows\Bai02.GeneratedMSBuildEditorConfig.editorconfig
+D:\Lab01\Bai02\obj\Debug\net8.0-windows\Bai02.AssemblyInfoInputs.cache
+D:\Lab01\Bai02\obj\Debug\net8.0-windows\Bai02.AssemblyInfo.cs
+D:\Lab01\Bai02\obj\Debug\net8.0-windows\Bai02.csproj.CoreCompileInputs.cache
+D:\Lab01\Bai02\obj\Debug\net8.0-windows\Bai02.dll
+D:\Lab01\Bai02\obj\Debug\net8.0-windows\refint\Bai02.dll
+D:\Lab01\Bai02\obj\Debug\net8.0-windows\Bai02.pdb
+D:\Lab01\Bai02\obj\Debug\net8.0-windows\Bai02.genruntimeconfig.cache
+D:\Lab01\Bai02\obj\Debug\net8.0-windows\ref\Bai02.dll
