@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-//okay
+
 namespace Lab_1_5
 {
     public partial class Form1 : Form
@@ -56,12 +56,33 @@ namespace Lab_1_5
             int num;
             if (int.TryParse(txt1.Text, out num) && int.TryParse(txt2.Text, out num) && int.TryParse(txt3.Text, out num))
             {
-
+                string name = txtname.Text;
+                string gender = comboxGender.SelectedItem.ToString();
+                int r1 = int.Parse(txt1.Text);
+                int r2 = int.Parse(txt2.Text);
+                int r3 = int.Parse(txt3.Text);
+                double aver = (r1 + r2 + r3) / 3.0;
+                string classify = "";
+                if (aver >= 9)
+                    classify = "Expert";
+                else if (aver >= 7)
+                    classify = "Good";
+                else
+                    classify = "Limited";
+                dataGridView1.Rows.Add("TS001", name, gender, r1, r2, r3, aver, classify);
             }
             else
             {
-                MessageBox.Show("Điểm số không chứa ký tự khác số");
+                MessageBox.Show("Results cannot be filled with non-numeric characters");
             }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+                if (e.ColumnIndex == e.RowIndex) // Check if "Xoá" button is clicked
+                {
+                    dataGridView1.Rows.RemoveAt(e.RowIndex);
+                }
         }
     }
 }

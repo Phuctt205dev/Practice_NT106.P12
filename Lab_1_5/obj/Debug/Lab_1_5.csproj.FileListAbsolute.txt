@@ -8,3 +8,13 @@ D:\Files C# VS (Purple)\School Projects\Lab_1_5\obj\Debug\Lab_1_5.csproj.Generat
 D:\Files C# VS (Purple)\School Projects\Lab_1_5\obj\Debug\Lab_1_5.csproj.CoreCompileInputs.cache
 D:\Files C# VS (Purple)\School Projects\Lab_1_5\obj\Debug\Lab_1_5.exe
 D:\Files C# VS (Purple)\School Projects\Lab_1_5\obj\Debug\Lab_1_5.pdb
+D:\Files C# VS (Purple)\Practice Class\Lab_1_5\bin\Debug\Lab_1_5.exe.config
+D:\Files C# VS (Purple)\Practice Class\Lab_1_5\bin\Debug\Lab_1_5.exe
+D:\Files C# VS (Purple)\Practice Class\Lab_1_5\bin\Debug\Lab_1_5.pdb
+D:\Files C# VS (Purple)\Practice Class\Lab_1_5\obj\Debug\Lab_1_5.csproj.AssemblyReference.cache
+D:\Files C# VS (Purple)\Practice Class\Lab_1_5\obj\Debug\Lab_1_5.Form1.resources
+D:\Files C# VS (Purple)\Practice Class\Lab_1_5\obj\Debug\Lab_1_5.Properties.Resources.resources
+D:\Files C# VS (Purple)\Practice Class\Lab_1_5\obj\Debug\Lab_1_5.csproj.GenerateResource.cache
+D:\Files C# VS (Purple)\Practice Class\Lab_1_5\obj\Debug\Lab_1_5.csproj.CoreCompileInputs.cache
+D:\Files C# VS (Purple)\Practice Class\Lab_1_5\obj\Debug\Lab_1_5.exe
+D:\Files C# VS (Purple)\Practice Class\Lab_1_5\obj\Debug\Lab_1_5.pdb
