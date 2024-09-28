@@ -1,0 +1,16 @@
+D:\Lab01\Bai04\bin\Debug\net8.0-windows\Bai04.exe
+D:\Lab01\Bai04\bin\Debug\net8.0-windows\Bai04.deps.json
+D:\Lab01\Bai04\bin\Debug\net8.0-windows\Bai04.runtimeconfig.json
+D:\Lab01\Bai04\bin\Debug\net8.0-windows\Bai04.dll
+D:\Lab01\Bai04\bin\Debug\net8.0-windows\Bai04.pdb
+D:\Lab01\Bai04\obj\Debug\net8.0-windows\Bai04.Form1.resources
+D:\Lab01\Bai04\obj\Debug\net8.0-windows\Bai04.csproj.GenerateResource.cache
+D:\Lab01\Bai04\obj\Debug\net8.0-windows\Bai04.GeneratedMSBuildEditorConfig.editorconfig
+D:\Lab01\Bai04\obj\Debug\net8.0-windows\Bai04.AssemblyInfoInputs.cache
+D:\Lab01\Bai04\obj\Debug\net8.0-windows\Bai04.AssemblyInfo.cs
+D:\Lab01\Bai04\obj\Debug\net8.0-windows\Bai04.csproj.CoreCompileInputs.cache
+D:\Lab01\Bai04\obj\Debug\net8.0-windows\Bai04.dll
+D:\Lab01\Bai04\obj\Debug\net8.0-windows\refint\Bai04.dll
+D:\Lab01\Bai04\obj\Debug\net8.0-windows\Bai04.pdb
+D:\Lab01\Bai04\obj\Debug\net8.0-windows\Bai04.genruntimeconfig.cache
+D:\Lab01\Bai04\obj\Debug\net8.0-windows\ref\Bai04.dll
