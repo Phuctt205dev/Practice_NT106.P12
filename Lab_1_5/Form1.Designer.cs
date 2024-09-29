@@ -51,7 +51,6 @@
             this.txtResult3col = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtAveragecol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtRankcol = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.btnDelcol = new System.Windows.Forms.DataGridViewButtonColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -216,13 +215,12 @@
             this.txtResult2col,
             this.txtResult3col,
             this.txtAveragecol,
-            this.txtRankcol,
-            this.btnDelcol});
+            this.txtRankcol});
             this.dataGridView1.Location = new System.Drawing.Point(12, 354);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(976, 106);
+            this.dataGridView1.Size = new System.Drawing.Size(990, 106);
             this.dataGridView1.TabIndex = 26;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -298,13 +296,6 @@
             this.txtRankcol.Name = "txtRankcol";
             this.txtRankcol.Width = 125;
             // 
-            // btnDelcol
-            // 
-            this.btnDelcol.HeaderText = "Delete";
-            this.btnDelcol.MinimumWidth = 6;
-            this.btnDelcol.Name = "btnDelcol";
-            this.btnDelcol.Width = 125;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
@@ -351,7 +342,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn txtResult3col;
         private System.Windows.Forms.DataGridViewTextBoxColumn txtAveragecol;
         private System.Windows.Forms.DataGridViewComboBoxColumn txtRankcol;
-        private System.Windows.Forms.DataGridViewButtonColumn btnDelcol;
     }
 }
 
