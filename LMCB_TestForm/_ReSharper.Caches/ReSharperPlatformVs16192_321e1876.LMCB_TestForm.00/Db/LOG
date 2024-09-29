@@ -1,0 +1,221 @@
+2020/04/07-09:34:44.891 7e58 Recovering log #243
+2020/04/07-09:34:44.915 7e58 Level-0 table #262: started
+2020/04/07-09:34:44.941 7e58 Level-0 table #262: 3289879 bytes OK
+2020/04/07-09:34:44.946 7e58 Delete type=0 #243
+2020/04/07-09:34:44.946 7e58 Delete type=3 #182
+2020/04/07-09:34:46.223 3fb4 Compacting 1@0 + 3@1 files
+2020/04/07-09:34:46.236 3fb4 Generated table #264: 906 keys, 498998 bytes
+2020/04/07-09:34:46.260 3fb4 Generated table #265: 2705 keys, 2183110 bytes
+2020/04/07-09:34:46.284 3fb4 Generated table #266: 3269 keys, 2165708 bytes
+2020/04/07-09:34:46.294 3fb4 Generated table #267: 1001 keys, 788785 bytes
+2020/04/07-09:34:46.294 3fb4 Compacted 1@0 + 3@1 files => 5636601 bytes
+2020/04/07-09:34:46.295 3fb4 Delete type=2 #246
+2020/04/07-09:34:46.295 3fb4 Delete type=2 #247
+2020/04/07-09:34:46.296 3fb4 Delete type=2 #248
+2020/04/07-09:34:46.296 3fb4 Delete type=2 #262
+2020/04/07-09:34:46.297 3fb4 compacted to: files[ 0 4 18 0 0 0 0 ]
+2020/04/07-09:34:51.675 3fb4 Level-0 table #269: started
+2020/04/07-09:34:51.711 3fb4 Level-0 table #269: 4241474 bytes OK
+2020/04/07-09:34:51.713 3fb4 Delete type=0 #263
+2020/04/07-09:34:51.739 3fb4 Level-0 table #271: started
+2020/04/07-09:34:51.766 3fb4 Level-0 table #271: 4180030 bytes OK
+2020/04/07-09:34:51.768 3fb4 Delete type=0 #268
+2020/04/07-09:34:51.814 3fb4 Level-0 table #273: started
+2020/04/07-09:34:51.843 3fb4 Level-0 table #273: 4158013 bytes OK
+2020/04/07-09:34:51.845 3fb4 Delete type=0 #270
+2020/04/07-09:34:51.860 3fb4 Level-0 table #275: started
+2020/04/07-09:34:51.893 3fb4 Level-0 table #275: 3916518 bytes OK
+2020/04/07-09:34:51.896 3fb4 Delete type=0 #272
+2020/04/07-09:34:51.897 3fb4 Compacting 4@0 + 4@1 files
+2020/04/07-09:34:51.919 3fb4 Generated table #276: 3970 keys, 2163934 bytes
+2020/04/07-09:34:51.919 3fb4 Level-0 table #278: started
+2020/04/07-09:34:51.946 3fb4 Level-0 table #278: 3751276 bytes OK
+2020/04/07-09:34:51.947 3fb4 Delete type=0 #274
+2020/04/07-09:34:51.961 3fb4 Level-0 table #281: started
+2020/04/07-09:34:51.993 3fb4 Level-0 table #281: 3845274 bytes OK
+2020/04/07-09:34:51.994 3fb4 Delete type=0 #277
+2020/04/07-09:34:52.009 3fb4 Generated table #279: 4759 keys, 2158010 bytes
+2020/04/07-09:34:52.024 3fb4 Generated table #282: 3346 keys, 1566536 bytes
+2020/04/07-09:34:52.046 3fb4 Generated table #283: 2705 keys, 2183110 bytes
+2020/04/07-09:34:52.069 3fb4 Generated table #284: 3269 keys, 2165708 bytes
+2020/04/07-09:34:52.086 3fb4 Generated table #285: 2509 keys, 2203107 bytes
+2020/04/07-09:34:52.108 3fb4 Generated table #286: 2806 keys, 2183103 bytes
+2020/04/07-09:34:52.127 3fb4 Generated table #287: 3209 keys, 2183723 bytes
+2020/04/07-09:34:52.147 3fb4 Generated table #288: 3341 keys, 2159657 bytes
+2020/04/07-09:34:52.166 3fb4 Generated table #289: 2849 keys, 2166445 bytes
+2020/04/07-09:34:52.176 3fb4 Generated table #290: 1174 keys, 935639 bytes
+2020/04/07-09:34:52.176 3fb4 Compacted 4@0 + 4@1 files => 22068972 bytes
+2020/04/07-09:34:52.177 3fb4 Delete type=2 #264
+2020/04/07-09:34:52.177 3fb4 Delete type=2 #265
+2020/04/07-09:34:52.178 3fb4 Delete type=2 #266
+2020/04/07-09:34:52.178 3fb4 Delete type=2 #267
+2020/04/07-09:34:52.179 3fb4 Delete type=2 #269
+2020/04/07-09:34:52.179 3fb4 Delete type=2 #271
+2020/04/07-09:34:52.180 3fb4 Delete type=2 #273
+2020/04/07-09:34:52.181 3fb4 Delete type=2 #275
+2020/04/07-09:34:52.181 3fb4 compacted to: files[ 2 11 18 0 0 0 0 ]
+2020/04/07-09:34:52.182 3fb4 Compacting 1@1 + 1@2 files
+2020/04/07-09:34:52.203 3fb4 Generated table #291: 2145 keys, 2174353 bytes
+2020/04/07-09:34:52.210 3fb4 Generated table #292: 922 keys, 809095 bytes
+2020/04/07-09:34:52.210 3fb4 Compacted 1@1 + 1@2 files => 2983448 bytes
+2020/04/07-09:34:52.211 3fb4 Delete type=2 #260
+2020/04/07-09:34:52.212 3fb4 Delete type=2 #290
+2020/04/07-09:34:52.212 3fb4 compacted to: files[ 2 10 19 0 0 0 0 ]
+2020/04/07-09:34:52.212 3fb4 Compacting 1@1 + 7@2 files
+2020/04/07-09:34:52.227 3fb4 Generated table #293: 1386 keys, 2134205 bytes
+2020/04/07-09:34:52.251 3fb4 Generated table #294: 4188 keys, 2174674 bytes
+2020/04/07-09:34:52.277 3fb4 Generated table #295: 5209 keys, 2160530 bytes
+2020/04/07-09:34:52.300 3fb4 Generated table #296: 4824 keys, 2163464 bytes
+2020/04/07-09:34:52.326 3fb4 Generated table #297: 5460 keys, 2159414 bytes
+2020/04/07-09:34:52.356 3fb4 Generated table #298: 5662 keys, 2153261 bytes
+2020/04/07-09:34:52.380 3fb4 Generated table #299: 4037 keys, 2177638 bytes
+2020/04/07-09:34:52.401 3fb4 Generated table #300: 3494 keys, 1944364 bytes
+2020/04/07-09:34:52.401 3fb4 Compacted 1@1 + 7@2 files => 17067550 bytes
+2020/04/07-09:34:52.402 3fb4 Delete type=2 #250
+2020/04/07-09:34:52.403 3fb4 Delete type=2 #251
+2020/04/07-09:34:52.403 3fb4 Delete type=2 #252
+2020/04/07-09:34:52.404 3fb4 Delete type=2 #253
+2020/04/07-09:34:52.404 3fb4 Delete type=2 #254
+2020/04/07-09:34:52.404 3fb4 Delete type=2 #255
+2020/04/07-09:34:52.405 3fb4 Delete type=2 #256
+2020/04/07-09:34:52.405 3fb4 Delete type=2 #276
+2020/04/07-09:34:52.406 3fb4 compacted to: files[ 2 9 20 0 0 0 0 ]
+2020/04/07-09:34:52.406 3fb4 Compacting 1@1 + 1@2 files
+2020/04/07-09:34:52.428 3fb4 Generated table #301: 5066 keys, 2163475 bytes
+2020/04/07-09:34:52.446 3fb4 Generated table #302: 3187 keys, 1938905 bytes
+2020/04/07-09:34:52.446 3fb4 Compacted 1@1 + 1@2 files => 4102380 bytes
+2020/04/07-09:34:52.450 3fb4 Delete type=2 #279
+2020/04/07-09:34:52.450 3fb4 Delete type=2 #300
+2020/04/07-09:34:52.451 3fb4 compacted to: files[ 2 8 21 0 0 0 0 ]
+2020/04/07-09:34:52.451 3fb4 Compacting 1@1 + 4@2 files
+2020/04/07-09:34:52.479 3fb4 Generated table #303: 4498 keys, 2158554 bytes
+2020/04/07-09:34:52.502 3fb4 Generated table #304: 2985 keys, 2188850 bytes
+2020/04/07-09:34:52.524 3fb4 Generated table #305: 2593 keys, 2191939 bytes
+2020/04/07-09:34:52.551 3fb4 Generated table #306: 3092 keys, 2177487 bytes
+2020/04/07-09:34:52.563 3fb4 Generated table #307: 1770 keys, 941089 bytes
+2020/04/07-09:34:52.563 3fb4 Compacted 1@1 + 4@2 files => 9657919 bytes
+2020/04/07-09:34:52.565 3fb4 Delete type=2 #257
+2020/04/07-09:34:52.565 3fb4 Delete type=2 #258
+2020/04/07-09:34:52.566 3fb4 Delete type=2 #259
+2020/04/07-09:34:52.566 3fb4 Delete type=2 #282
+2020/04/07-09:34:52.567 3fb4 Delete type=2 #302
+2020/04/07-09:34:52.568 3fb4 compacted to: files[ 2 7 22 0 0 0 0 ]
+2020/04/07-09:34:52.568 3fb4 Compacting 1@1 + 1@2 files
+2020/04/07-09:34:52.591 3fb4 Generated table #308: 2538 keys, 2178747 bytes
+2020/04/07-09:34:52.611 3fb4 Generated table #309: 3165 keys, 2162776 bytes
+2020/04/07-09:34:52.611 3fb4 Compacted 1@1 + 1@2 files => 4341523 bytes
+2020/04/07-09:34:52.612 3fb4 Delete type=2 #196
+2020/04/07-09:34:52.612 3fb4 Delete type=2 #283
+2020/04/07-09:34:52.613 3fb4 compacted to: files[ 2 6 23 0 0 0 0 ]
+2020/04/07-09:34:52.613 3fb4 Expanding@1 1+8 to 6+8
+2020/04/07-09:34:52.613 3fb4 Compacting 6@1 + 8@2 files
+2020/04/07-09:34:52.631 3fb4 Generated table #310: 3263 keys, 2157346 bytes
+2020/04/07-09:34:52.650 3fb4 Generated table #311: 3028 keys, 2188076 bytes
+2020/04/07-09:34:52.670 3fb4 Generated table #312: 3683 keys, 2159939 bytes
+2020/04/07-09:34:52.689 3fb4 Generated table #313: 3048 keys, 2160274 bytes
+2020/04/07-09:34:52.709 3fb4 Generated table #314: 3586 keys, 2175140 bytes
+2020/04/07-09:34:52.732 3fb4 Generated table #315: 2622 keys, 2180727 bytes
+2020/04/07-09:34:52.754 3fb4 Generated table #316: 3911 keys, 2178233 bytes
+2020/04/07-09:34:52.777 3fb4 Generated table #317: 3043 keys, 2162299 bytes
+2020/04/07-09:34:52.799 3fb4 Generated table #318: 2298 keys, 2179826 bytes
+2020/04/07-09:34:52.816 3fb4 Generated table #319: 2218 keys, 2206283 bytes
+2020/04/07-09:34:52.835 3fb4 Generated table #320: 3065 keys, 2180888 bytes
+2020/04/07-09:34:52.858 3fb4 Generated table #321: 3416 keys, 2178187 bytes
+2020/04/07-09:34:52.877 3fb4 Generated table #322: 3202 keys, 2161073 bytes
+2020/04/07-09:34:52.898 3fb4 Generated table #323: 2591 keys, 2132261 bytes
+2020/04/07-09:34:52.898 3fb4 Compacted 6@1 + 8@2 files => 30400552 bytes
+2020/04/07-09:34:52.900 3fb4 Delete type=2 #197
+2020/04/07-09:34:52.900 3fb4 Delete type=2 #198
+2020/04/07-09:34:52.900 3fb4 Delete type=2 #199
+2020/04/07-09:34:52.901 3fb4 Delete type=2 #216
+2020/04/07-09:34:52.901 3fb4 Delete type=2 #217
+2020/04/07-09:34:52.902 3fb4 Delete type=2 #218
+2020/04/07-09:34:52.902 3fb4 Delete type=2 #284
+2020/04/07-09:34:52.902 3fb4 Delete type=2 #285
+2020/04/07-09:34:52.903 3fb4 Delete type=2 #286
+2020/04/07-09:34:52.903 3fb4 Delete type=2 #287
+2020/04/07-09:34:52.903 3fb4 Delete type=2 #288
+2020/04/07-09:34:52.904 3fb4 Delete type=2 #289
+2020/04/07-09:34:52.904 3fb4 Delete type=2 #291
+2020/04/07-09:34:52.904 3fb4 Delete type=2 #309
+2020/04/07-09:34:52.905 3fb4 compacted to: files[ 2 0 29 0 0 0 0 ]
+2020/04/07-09:34:53.648 3fb4 Compacting 2@0 + 0@1 files
+2020/04/07-09:34:53.664 3fb4 Generated table #324: 4688 keys, 2162857 bytes
+2020/04/07-09:34:53.695 3fb4 Generated table #325: 3560 keys, 2171609 bytes
+2020/04/07-09:34:53.711 3fb4 Generated table #326: 3466 keys, 2163096 bytes
+2020/04/07-09:34:53.726 3fb4 Generated table #327: 1286 keys, 1095463 bytes
+2020/04/07-09:34:53.726 3fb4 Compacted 2@0 + 0@1 files => 7593025 bytes
+2020/04/07-09:34:53.726 3fb4 Delete type=2 #278
+2020/04/07-09:34:53.726 3fb4 Delete type=2 #281
+2020/04/07-09:34:53.726 3fb4 compacted to: files[ 0 4 29 0 0 0 0 ]
+2020/04/07-09:35:57.128 3fb4 Compacting 1@1 + 10@2 files
+2020/04/07-09:35:57.146 3fb4 Generated table #328: 1391 keys, 2130901 bytes
+2020/04/07-09:35:57.169 3fb4 Generated table #329: 4178 keys, 2174851 bytes
+2020/04/07-09:35:57.190 3fb4 Generated table #330: 5221 keys, 2164875 bytes
+2020/04/07-09:35:57.213 3fb4 Generated table #331: 4824 keys, 2163464 bytes
+2020/04/07-09:35:57.236 3fb4 Generated table #332: 5460 keys, 2159414 bytes
+2020/04/07-09:35:57.259 3fb4 Generated table #333: 5662 keys, 2153261 bytes
+2020/04/07-09:35:57.285 3fb4 Generated table #334: 4037 keys, 2177638 bytes
+2020/04/07-09:35:57.312 3fb4 Generated table #335: 5066 keys, 2163475 bytes
+2020/04/07-09:35:57.334 3fb4 Generated table #336: 4498 keys, 2158554 bytes
+2020/04/07-09:35:57.361 3fb4 Generated table #337: 4732 keys, 2168576 bytes
+2020/04/07-09:35:57.383 3fb4 Generated table #338: 2934 keys, 2182787 bytes
+2020/04/07-09:35:57.383 3fb4 Compacted 1@1 + 10@2 files => 23797796 bytes
+2020/04/07-09:35:57.384 3fb4 Delete type=2 #293
+2020/04/07-09:35:57.385 3fb4 Delete type=2 #294
+2020/04/07-09:35:57.385 3fb4 Delete type=2 #295
+2020/04/07-09:35:57.386 3fb4 Delete type=2 #296
+2020/04/07-09:35:57.386 3fb4 Delete type=2 #297
+2020/04/07-09:35:57.388 3fb4 Delete type=2 #298
+2020/04/07-09:35:57.388 3fb4 Delete type=2 #299
+2020/04/07-09:35:57.389 3fb4 Delete type=2 #301
+2020/04/07-09:35:57.389 3fb4 Delete type=2 #303
+2020/04/07-09:35:57.390 3fb4 Delete type=2 #304
+2020/04/07-09:35:57.390 3fb4 Delete type=2 #324
+2020/04/07-09:35:57.391 3fb4 compacted to: files[ 0 3 30 0 0 0 0 ]
+2020/04/07-09:53:07.650 3fb4 Level-0 table #340: started
+2020/04/07-09:53:07.685 3fb4 Level-0 table #340: 3763440 bytes OK
+2020/04/07-09:53:07.687 3fb4 Delete type=0 #280
+2020/04/07-09:58:04.205 3fb4 Compacting 1@0 + 3@1 files
+2020/04/07-09:58:04.215 3fb4 Generated table #341: 58 keys, 16242 bytes
+2020/04/07-09:58:04.229 3fb4 Generated table #342: 1772 keys, 622306 bytes
+2020/04/07-09:58:04.253 3fb4 Generated table #343: 3404 keys, 2176460 bytes
+2020/04/07-09:58:04.281 3fb4 Generated table #344: 3811 keys, 2159763 bytes
+2020/04/07-09:58:04.308 3fb4 Generated table #345: 2488 keys, 2174974 bytes
+2020/04/07-09:58:04.320 3fb4 Generated table #346: 681 keys, 524765 bytes
+2020/04/07-09:58:04.321 3fb4 Compacted 1@0 + 3@1 files => 7674510 bytes
+2020/04/07-09:58:04.322 3fb4 Delete type=2 #325
+2020/04/07-09:58:04.323 3fb4 Delete type=2 #326
+2020/04/07-09:58:04.323 3fb4 Delete type=2 #327
+2020/04/07-09:58:04.324 3fb4 Delete type=2 #340
+2020/04/07-09:58:04.325 3fb4 compacted to: files[ 0 6 30 0 0 0 0 ]
+2020/04/07-10:09:53.598 3fb4 Compacting 1@1 + 1@2 files
+2020/04/07-10:09:53.612 3fb4 Generated table #347: 1575 keys, 1306884 bytes
+2020/04/07-10:09:53.612 3fb4 Compacted 1@1 + 1@2 files => 1306884 bytes
+2020/04/07-10:09:53.614 3fb4 Delete type=2 #292
+2020/04/07-10:09:53.614 3fb4 Delete type=2 #346
+2020/04/07-10:09:53.614 3fb4 compacted to: files[ 0 5 30 0 0 0 0 ]
+2020/04/07-10:22:12.504 3fb4 Level-0 table #349: started
+2020/04/07-10:22:12.540 3fb4 Level-0 table #349: 3738417 bytes OK
+2020/04/07-10:22:12.542 3fb4 Delete type=0 #339
+2020/04/07-10:26:39.700 3fb4 Compacting 1@0 + 5@1 files
+2020/04/07-10:26:39.708 3fb4 Generated table #350: 76 keys, 26096 bytes
+2020/04/07-10:26:39.723 3fb4 Generated table #351: 1772 keys, 622306 bytes
+2020/04/07-10:26:39.754 3fb4 Generated table #352: 3404 keys, 2176460 bytes
+2020/04/07-10:26:39.776 3fb4 Generated table #353: 3811 keys, 2159763 bytes
+2020/04/07-10:26:39.799 3fb4 Generated table #354: 2488 keys, 2174974 bytes
+2020/04/07-10:26:39.804 3fb4 Generated table #355: 49 keys, 91362 bytes
+2020/04/07-10:26:39.804 3fb4 Compacted 1@0 + 5@1 files => 7250961 bytes
+2020/04/07-10:26:39.806 3fb4 Delete type=2 #341
+2020/04/07-10:26:39.806 3fb4 Delete type=2 #342
+2020/04/07-10:26:39.807 3fb4 Delete type=2 #343
+2020/04/07-10:26:39.807 3fb4 Delete type=2 #344
+2020/04/07-10:26:39.807 3fb4 Delete type=2 #345
+2020/04/07-10:26:39.808 3fb4 Delete type=2 #349
+2020/04/07-10:26:39.808 3fb4 compacted to: files[ 0 6 30 0 0 0 0 ]
+2020/04/07-10:27:29.721 3fb4 Compacting 1@1 + 1@2 files
+2020/04/07-10:27:29.736 3fb4 Generated table #356: 1571 keys, 1298958 bytes
+2020/04/07-10:27:29.736 3fb4 Compacted 1@1 + 1@2 files => 1298958 bytes
+2020/04/07-10:27:29.737 3fb4 Delete type=2 #347
+2020/04/07-10:27:29.737 3fb4 Delete type=2 #355
+2020/04/07-10:27:29.737 3fb4 compacted to: files[ 0 5 30 0 0 0 0 ]
