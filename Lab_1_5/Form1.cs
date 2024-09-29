@@ -32,7 +32,7 @@ namespace Lab_1_5
             {
                 Name = "Delete",
                 HeaderText = "Delete",
-                Text = "Xóa",
+                Text = "Delete",
                 UseColumnTextForButtonValue = true
             };
             dataGridView1.Columns.Add(deleteButtonColumn);
@@ -57,7 +57,7 @@ namespace Lab_1_5
                 string name = txtname.Text;
                 if (name.Length > 30)
                 {
-                    MessageBox.Show("Họ và tên không được quá 30 ký tự.");
+                    MessageBox.Show("Name is not allowed to be longer than 30 characters!");
                     return;
                 }
 
@@ -65,7 +65,7 @@ namespace Lab_1_5
                 string gender = comboxGender.SelectedItem != null ? comboxGender.SelectedItem.ToString() : null;
                 if (string.IsNullOrEmpty(gender))
                 {
-                    MessageBox.Show("Vui lòng chọn giới tính.");
+                    MessageBox.Show("Choose the gender!");
                     return;
                 }
 
@@ -73,15 +73,15 @@ namespace Lab_1_5
                 string classification = "";
 
                 if (average >= 8 && m1 >= 6.5 && m2 >= 6.5 && m3 >= 6.5)
-                    classification = "Giỏi";
+                    classification = "Expert";
                 else if (average >= 6.5 && m1 >= 5 && m2 >= 5 && m3 >= 5)
-                    classification = "Khá";
+                    classification = "Good";
                 else if (average >= 5 && m1 >= 3.5 && m2 >= 3.5 && m3 >= 3.5)
-                    classification = "Trung Bình";
+                    classification = "Medium";
                 else if (average >= 3.5 && m1 >= 2 && m2 >= 2 && m3 >= 2)
-                    classification = "Yếu";
+                    classification = "Limited";
                 else
-                    classification = "Kém";
+                    classification = "Extreme limited";
 
                 string studentID = $"TS{studentCounter:D3}";
                 studentCounter++;  
@@ -89,7 +89,7 @@ namespace Lab_1_5
             }
             else
             {
-                MessageBox.Show("Điểm phải là số từ 0 đến 10.");
+                MessageBox.Show("Results fluctuate from 0 to 10!");
             }
         }
 
