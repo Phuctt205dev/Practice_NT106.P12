@@ -1,0 +1,20 @@
+D:\Files C# VS (Purple)\School Projects\Lab_2_FNP\bin\Debug\Lab_2_FNP.exe.config
+D:\Files C# VS (Purple)\School Projects\Lab_2_FNP\bin\Debug\Lab_2_FNP.exe
+D:\Files C# VS (Purple)\School Projects\Lab_2_FNP\bin\Debug\Lab_2_FNP.pdb
+D:\Files C# VS (Purple)\School Projects\Lab_2_FNP\obj\Debug\Lab_2_FNP.csproj.AssemblyReference.cache
+D:\Files C# VS (Purple)\School Projects\Lab_2_FNP\obj\Debug\Lab_2_FNP.Form1.resources
+D:\Files C# VS (Purple)\School Projects\Lab_2_FNP\obj\Debug\Lab_2_FNP.Properties.Resources.resources
+D:\Files C# VS (Purple)\School Projects\Lab_2_FNP\obj\Debug\Lab_2_FNP.csproj.GenerateResource.cache
+D:\Files C# VS (Purple)\School Projects\Lab_2_FNP\obj\Debug\Lab_2_FNP.csproj.CoreCompileInputs.cache
+D:\Files C# VS (Purple)\School Projects\Lab_2_FNP\obj\Debug\Lab_2_FNP.exe
+D:\Files C# VS (Purple)\School Projects\Lab_2_FNP\obj\Debug\Lab_2_FNP.pdb
+D:\Files C# VS (Purple)\My Own Practice\Lab_2_FNP\bin\Debug\Lab_2_FNP.exe.config
+D:\Files C# VS (Purple)\My Own Practice\Lab_2_FNP\bin\Debug\Lab_2_FNP.exe
+D:\Files C# VS (Purple)\My Own Practice\Lab_2_FNP\bin\Debug\Lab_2_FNP.pdb
+D:\Files C# VS (Purple)\My Own Practice\Lab_2_FNP\obj\Debug\Lab_2_FNP.csproj.AssemblyReference.cache
+D:\Files C# VS (Purple)\My Own Practice\Lab_2_FNP\obj\Debug\Lab_2_FNP.Form1.resources
+D:\Files C# VS (Purple)\My Own Practice\Lab_2_FNP\obj\Debug\Lab_2_FNP.Properties.Resources.resources
+D:\Files C# VS (Purple)\My Own Practice\Lab_2_FNP\obj\Debug\Lab_2_FNP.csproj.GenerateResource.cache
+D:\Files C# VS (Purple)\My Own Practice\Lab_2_FNP\obj\Debug\Lab_2_FNP.csproj.CoreCompileInputs.cache
+D:\Files C# VS (Purple)\My Own Practice\Lab_2_FNP\obj\Debug\Lab_2_FNP.exe
+D:\Files C# VS (Purple)\My Own Practice\Lab_2_FNP\obj\Debug\Lab_2_FNP.pdb
