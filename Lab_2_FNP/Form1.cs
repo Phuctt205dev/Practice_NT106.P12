@@ -17,25 +17,24 @@ namespace Lab_2_FNP
             InitializeComponent();
         }
 
-        private int TinhGiaiThua(int n)
+        private int Fatorial(int n)
         {
-            int giaiThua = 1;
+            int fatorial = 1;
             for (int i = 1; i <= n; i++)
             {
-                giaiThua *= i;
+                fatorial *= i;
             }
-            return giaiThua;
+            return fatorial;
         }
 
-        // Hàm tính tổng S = A^1 + A^2 + ... + A^B
-        private int TinhTongLuyThua(int A, int B)
+        private int SumOfPower(int A, int B)
         {
-            int tong = 0;
+            int sum = 0;
             for (int i = 1; i <= B; i++)
             {
-                tong += (int)Math.Pow(A, i); // Tính A^i
+                sum += (int)Math.Pow(A, i);
             }
-            return tong;
+            return sum;
         }
 
 
@@ -46,32 +45,30 @@ namespace Lab_2_FNP
             int index = Choices.SelectedIndex;
             int minus = A - B;
 
-            if (index == 0)
+            if (index == 0) // Outputs if A < B
             {
-                // Bảng cửu chương từ B đến A
-                string ketQua = "";
+                string result = "";
                 for (int i = B; i >= A; i--)
                 {
                     for (int j = 1; j <= 10; j++)
                     {
-                        ketQua += $"{i} x {j} = {i * j}\n";
+                        result += $"{i} x {j} = {i * j}\n";
                     }
-                    ketQua += "\n"; // Thêm dòng trống sau mỗi bảng cửu chương
+                    result += "\n";
                 }
-                ResultBox.Text = ketQua;
+                ResultBox.Text = result;
             }
-            else if (index == 1)
+            else if (index == 1) //Outputs if A > B
             {
-                // Tính giai thừa (A - B) và tổng S
                 if (minus < 0)
                 {
-                    ResultBox.Text = "Không thể tính giai thừa cho số âm.";
+                    ResultBox.Text = "Cannot calculate fatorial due to negative numbers";
                 }
                 else
                 {
-                    int giaiThua = TinhGiaiThua(minus);
-                    int tongLuyThua = TinhTongLuyThua(A, B);
-                    ResultBox.Text = $"(A - B)! = {giaiThua}\nTổng S = {tongLuyThua}";
+                    int fatorial = Fatorial(minus);
+                    int sumLuyThua = SumOfPower(A, B);
+                    ResultBox.Text = $"(A - B)! = {fatorial}\nSum = {sumLuyThua}";
                 }
             }
         }
