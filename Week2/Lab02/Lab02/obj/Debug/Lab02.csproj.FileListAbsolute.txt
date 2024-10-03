@@ -1,0 +1,24 @@
+D:\UIT\Hk3\NT106\Thực Hành\Lab02\Lab02\obj\Debug\Lab02.csproj.AssemblyReference.cache
+D:\UIT\Hk3\NT106\Thực Hành\Lab02\Lab02\obj\Debug\Lab02.Bai03.resources
+D:\UIT\Hk3\NT106\Thực Hành\Lab02\Lab02\obj\Debug\Lab02.Properties.Resources.resources
+D:\UIT\Hk3\NT106\Thực Hành\Lab02\Lab02\obj\Debug\Lab02.csproj.GenerateResource.cache
+D:\UIT\Hk3\NT106\Thực Hành\Lab02\Lab02\obj\Debug\Lab02.csproj.CoreCompileInputs.cache
+D:\UIT\Hk3\NT106\Thực Hành\Lab02\Lab02\obj\Debug\Lab02.Dashboard.resources
+D:\UIT\Hk3\NT106\Thực Hành\Lab02\Lab02\bin\Debug\Lab02.exe.config
+D:\UIT\Hk3\NT106\Thực Hành\Lab02\Lab02\bin\Debug\Lab02.exe
+D:\UIT\Hk3\NT106\Thực Hành\Lab02\Lab02\bin\Debug\Lab02.pdb
+D:\UIT\Hk3\NT106\Thực Hành\Lab02\Lab02\obj\Debug\Lab02.exe
+D:\UIT\Hk3\NT106\Thực Hành\Lab02\Lab02\obj\Debug\Lab02.pdb
+D:\Files C# VS (Purple)\Practice Class\NT106.P12_TH\Week2\Lab02\Lab02\bin\Debug\Lab02.exe.config
+D:\Files C# VS (Purple)\Practice Class\NT106.P12_TH\Week2\Lab02\Lab02\bin\Debug\Lab02.exe
+D:\Files C# VS (Purple)\Practice Class\NT106.P12_TH\Week2\Lab02\Lab02\bin\Debug\Lab02.pdb
+D:\Files C# VS (Purple)\Practice Class\NT106.P12_TH\Week2\Lab02\Lab02\obj\Debug\Lab02.csproj.AssemblyReference.cache
+D:\Files C# VS (Purple)\Practice Class\NT106.P12_TH\Week2\Lab02\Lab02\obj\Debug\Lab02.Bai03.resources
+D:\Files C# VS (Purple)\Practice Class\NT106.P12_TH\Week2\Lab02\Lab02\obj\Debug\Lab02.Bai04.resources
+D:\Files C# VS (Purple)\Practice Class\NT106.P12_TH\Week2\Lab02\Lab02\obj\Debug\Lab02.Bai05.resources
+D:\Files C# VS (Purple)\Practice Class\NT106.P12_TH\Week2\Lab02\Lab02\obj\Debug\Lab02.Dashboard.resources
+D:\Files C# VS (Purple)\Practice Class\NT106.P12_TH\Week2\Lab02\Lab02\obj\Debug\Lab02.Properties.Resources.resources
+D:\Files C# VS (Purple)\Practice Class\NT106.P12_TH\Week2\Lab02\Lab02\obj\Debug\Lab02.csproj.GenerateResource.cache
+D:\Files C# VS (Purple)\Practice Class\NT106.P12_TH\Week2\Lab02\Lab02\obj\Debug\Lab02.csproj.CoreCompileInputs.cache
+D:\Files C# VS (Purple)\Practice Class\NT106.P12_TH\Week2\Lab02\Lab02\obj\Debug\Lab02.exe
+D:\Files C# VS (Purple)\Practice Class\NT106.P12_TH\Week2\Lab02\Lab02\obj\Debug\Lab02.pdb
