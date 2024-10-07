@@ -1,0 +1,5 @@
+Invalid input: m - n
+2 * 3 = 6
+Invalid input: ++ 10
+Cannot divide by zero: 12 / 0
+Invalid input:
