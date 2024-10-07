@@ -49,3 +49,17 @@ D:\Chrome's installation\Lab02\Lab02\obj\Debug\Lab02.csproj.GenerateResource.cac
 D:\Chrome's installation\Lab02\Lab02\obj\Debug\Lab02.csproj.CoreCompileInputs.cache
 D:\Chrome's installation\Lab02\Lab02\obj\Debug\Lab02.exe
 D:\Chrome's installation\Lab02\Lab02\obj\Debug\Lab02.pdb
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week2\Lab02\Lab02\bin\Debug\Lab02.exe.config
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week2\Lab02\Lab02\bin\Debug\Lab02.exe
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week2\Lab02\Lab02\bin\Debug\Lab02.pdb
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week2\Lab02\Lab02\obj\Debug\Lab02.csproj.AssemblyReference.cache
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week2\Lab02\Lab02\obj\Debug\Lab02.Bai01.resources
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week2\Lab02\Lab02\obj\Debug\Lab02.Bai03.resources
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week2\Lab02\Lab02\obj\Debug\Lab02.Bai04.resources
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week2\Lab02\Lab02\obj\Debug\Lab02.Bai05.resources
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week2\Lab02\Lab02\obj\Debug\Lab02.Dashboard.resources
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week2\Lab02\Lab02\obj\Debug\Lab02.Properties.Resources.resources
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week2\Lab02\Lab02\obj\Debug\Lab02.csproj.GenerateResource.cache
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week2\Lab02\Lab02\obj\Debug\Lab02.csproj.CoreCompileInputs.cache
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week2\Lab02\Lab02\obj\Debug\Lab02.exe
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week2\Lab02\Lab02\obj\Debug\Lab02.pdb

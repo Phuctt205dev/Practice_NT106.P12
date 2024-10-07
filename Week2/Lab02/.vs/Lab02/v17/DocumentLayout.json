@@ -3,24 +3,8 @@
   "WorkspaceRootPath": "D:\\Files C# VS (Purple)\\Practice Class\\Practice_NT106.P12\\Week2\\Lab02\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{42D04254-C787-4CC5-AF3E-DB6FE0C9BB3C}|Lab02\\Lab02.csproj|d:\\files c# vs (purple)\\practice class\\practice_nt106.p12\\week2\\lab02\\lab02\\bai02.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{42D04254-C787-4CC5-AF3E-DB6FE0C9BB3C}|Lab02\\Lab02.csproj|solutionrelative:lab02\\bai02.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{42D04254-C787-4CC5-AF3E-DB6FE0C9BB3C}|Lab02\\Lab02.csproj|D:\\Files C# VS (Purple)\\Practice Class\\Practice_NT106.P12\\Week2\\Lab02\\lab02\\bai01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{42D04254-C787-4CC5-AF3E-DB6FE0C9BB3C}|Lab02\\Lab02.csproj|solutionrelative:lab02\\bai01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{42D04254-C787-4CC5-AF3E-DB6FE0C9BB3C}|Lab02\\Lab02.csproj|D:\\Files C# VS (Purple)\\Practice Class\\Practice_NT106.P12\\Week2\\Lab02\\lab02\\bai01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{42D04254-C787-4CC5-AF3E-DB6FE0C9BB3C}|Lab02\\Lab02.csproj|solutionrelative:lab02\\bai01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{42D04254-C787-4CC5-AF3E-DB6FE0C9BB3C}|Lab02\\Lab02.csproj|D:\\Files C# VS (Purple)\\Practice Class\\Practice_NT106.P12\\Week2\\Lab02\\lab02\\bai05.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{42D04254-C787-4CC5-AF3E-DB6FE0C9BB3C}|Lab02\\Lab02.csproj|solutionrelative:lab02\\bai05.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{42D04254-C787-4CC5-AF3E-DB6FE0C9BB3C}|Lab02\\Lab02.csproj|D:\\Files C# VS (Purple)\\Practice Class\\Practice_NT106.P12\\Week2\\Lab02\\lab02\\bai05.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{42D04254-C787-4CC5-AF3E-DB6FE0C9BB3C}|Lab02\\Lab02.csproj|solutionrelative:lab02\\bai05.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{42D04254-C787-4CC5-AF3E-DB6FE0C9BB3C}|Lab02\\Lab02.csproj|d:\\files c# vs (purple)\\practice class\\practice_nt106.p12\\week2\\lab02\\lab02\\bai04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42D04254-C787-4CC5-AF3E-DB6FE0C9BB3C}|Lab02\\Lab02.csproj|solutionrelative:lab02\\bai04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,60 +27,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Bai02.cs [Design]",
-              "DocumentMoniker": "D:\\Files C# VS (Purple)\\Practice Class\\Practice_NT106.P12\\Week2\\Lab02\\Lab02\\Bai02.cs",
-              "RelativeDocumentMoniker": "Lab02\\Bai02.cs",
-              "ToolTip": "D:\\Files C# VS (Purple)\\Practice Class\\Practice_NT106.P12\\Week2\\Lab02\\Lab02\\Bai02.cs [Design]",
-              "RelativeToolTip": "Lab02\\Bai02.cs [Design]",
+              "Title": "Bai04.cs",
+              "DocumentMoniker": "D:\\Files C# VS (Purple)\\Practice Class\\Practice_NT106.P12\\Week2\\Lab02\\Lab02\\Bai04.cs",
+              "RelativeDocumentMoniker": "Lab02\\Bai04.cs",
+              "ToolTip": "D:\\Files C# VS (Purple)\\Practice Class\\Practice_NT106.P12\\Week2\\Lab02\\Lab02\\Bai04.cs",
+              "RelativeToolTip": "Lab02\\Bai04.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T10:13:20.955Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Bai01.cs",
-              "DocumentMoniker": "D:\\Files C# VS (Purple)\\Practice Class\\Practice_NT106.P12\\Week2\\Lab02\\Lab02\\Bai01.cs",
-              "RelativeDocumentMoniker": "Lab02\\Bai01.cs",
-              "ToolTip": "D:\\Files C# VS (Purple)\\Practice Class\\Practice_NT106.P12\\Week2\\Lab02\\Lab02\\Bai01.cs",
-              "RelativeToolTip": "Lab02\\Bai01.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAABLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-03T13:19:52.41Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Bai01.cs [Design]",
-              "DocumentMoniker": "D:\\Files C# VS (Purple)\\Practice Class\\Practice_NT106.P12\\Week2\\Lab02\\Lab02\\Bai01.cs",
-              "RelativeDocumentMoniker": "Lab02\\Bai01.cs",
-              "ToolTip": "D:\\Chrome\u0027s installation\\Lab02\\Lab02\\Bai01.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\Chrome\u0027s installation\\Lab02\\Lab02\\Bai01.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-03T13:11:12.353Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Bai05.cs",
-              "DocumentMoniker": "D:\\Files C# VS (Purple)\\Practice Class\\Practice_NT106.P12\\Week2\\Lab02\\Lab02\\Bai05.cs",
-              "RelativeDocumentMoniker": "Lab02\\Bai05.cs",
-              "ToolTip": "D:\\Files C# VS (Purple)\\Practice Class\\Practice_NT106.P12\\Week2\\Lab02\\Lab02\\Bai05.cs",
-              "RelativeToolTip": "Lab02\\Bai05.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-03T06:37:52.794Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Bai05.cs [Design]",
-              "DocumentMoniker": "D:\\Files C# VS (Purple)\\Practice Class\\Practice_NT106.P12\\Week2\\Lab02\\Lab02\\Bai05.cs",
-              "RelativeDocumentMoniker": "Lab02\\Bai05.cs",
-              "ToolTip": "D:\\Files C# VS (Purple)\\Practice Class\\NT106.P12_TH\\Week2\\Lab02\\Lab02\\Bai05.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\NT106.P12_TH\\Week2\\Lab02\\Lab02\\Bai05.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-03T06:37:34.675Z"
+              "WhenOpened": "2024-10-06T15:49:59.677Z",
+              "EditorCaption": ""
             }
           ]
         }
