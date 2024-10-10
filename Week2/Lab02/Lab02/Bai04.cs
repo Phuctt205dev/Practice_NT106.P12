@@ -68,5 +68,15 @@ namespace Lab02
         {
 
         }
+
+        private void Bai04_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

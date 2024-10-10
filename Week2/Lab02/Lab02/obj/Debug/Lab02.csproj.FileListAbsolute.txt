@@ -93,3 +93,4 @@ D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Practice_NT106.P12\Wee
 D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Practice_NT106.P12\Week2\Lab02\Lab02\obj\Debug\Lab02.csproj.CoreCompileInputs.cache
 D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Practice_NT106.P12\Week2\Lab02\Lab02\obj\Debug\Lab02.exe
 D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Practice_NT106.P12\Week2\Lab02\Lab02\obj\Debug\Lab02.pdb
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week2\Lab02\Lab02\obj\Debug\Lab02.Bai02.resources
