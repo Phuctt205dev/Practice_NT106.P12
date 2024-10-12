@@ -31,9 +31,6 @@
             this.btnBack = new System.Windows.Forms.Button();
             this.btnNext = new System.Windows.Forms.Button();
             this.lbPage = new System.Windows.Forms.Label();
-            this.rtb1 = new System.Windows.Forms.RichTextBox();
-            this.rtb2 = new System.Windows.Forms.RichTextBox();
-            this.rtb3 = new System.Windows.Forms.RichTextBox();
             this.txtbName1 = new System.Windows.Forms.TextBox();
             this.txtbID1 = new System.Windows.Forms.TextBox();
             this.txtbPNum1 = new System.Windows.Forms.TextBox();
@@ -41,13 +38,13 @@
             this.txtbR2_1 = new System.Windows.Forms.TextBox();
             this.txtbR3_1 = new System.Windows.Forms.TextBox();
             this.txtbAver1 = new System.Windows.Forms.TextBox();
-            this.txtbAver2 = new System.Windows.Forms.TextBox();
-            this.txtbR3_2 = new System.Windows.Forms.TextBox();
-            this.txtbR2_2 = new System.Windows.Forms.TextBox();
-            this.txtbR1_2 = new System.Windows.Forms.TextBox();
-            this.txtbPNum2 = new System.Windows.Forms.TextBox();
-            this.txtbID2 = new System.Windows.Forms.TextBox();
-            this.txtbName2 = new System.Windows.Forms.TextBox();
+            this.txtbAverShow = new System.Windows.Forms.TextBox();
+            this.txtbR3_Show = new System.Windows.Forms.TextBox();
+            this.txtbR2_Show = new System.Windows.Forms.TextBox();
+            this.txtbR1_Show = new System.Windows.Forms.TextBox();
+            this.txtbPNumShow = new System.Windows.Forms.TextBox();
+            this.txtbIDShow = new System.Windows.Forms.TextBox();
+            this.txtbNameShow = new System.Windows.Forms.TextBox();
             this.btnWriteFile = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnReadFile = new System.Windows.Forms.Button();
@@ -66,6 +63,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
+            this.Present = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // btnBack
@@ -97,34 +95,6 @@
             this.lbPage.TabIndex = 2;
             this.lbPage.Text = "1";
             // 
-            // rtb1
-            // 
-            this.rtb1.Location = new System.Drawing.Point(327, 12);
-            this.rtb1.Name = "rtb1";
-            this.rtb1.ReadOnly = true;
-            this.rtb1.Size = new System.Drawing.Size(208, 395);
-            this.rtb1.TabIndex = 3;
-            this.rtb1.Text = "";
-            // 
-            // rtb2
-            // 
-            this.rtb2.Location = new System.Drawing.Point(327, 12);
-            this.rtb2.Name = "rtb2";
-            this.rtb2.ReadOnly = true;
-            this.rtb2.Size = new System.Drawing.Size(208, 395);
-            this.rtb2.TabIndex = 4;
-            this.rtb2.Text = "";
-            // 
-            // rtb3
-            // 
-            this.rtb3.Location = new System.Drawing.Point(327, 12);
-            this.rtb3.Name = "rtb3";
-            this.rtb3.ReadOnly = true;
-            this.rtb3.Size = new System.Drawing.Size(208, 395);
-            this.rtb3.TabIndex = 5;
-            this.rtb3.Text = "";
-            this.rtb3.TextChanged += new System.EventHandler(this.rtb3_TextChanged);
-            // 
             // txtbName1
             // 
             this.txtbName1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -132,6 +102,7 @@
             this.txtbName1.Name = "txtbName1";
             this.txtbName1.Size = new System.Drawing.Size(173, 22);
             this.txtbName1.TabIndex = 6;
+            this.txtbName1.TextChanged += new System.EventHandler(this.txtbName1_TextChanged);
             // 
             // txtbID1
             // 
@@ -178,64 +149,65 @@
             this.txtbAver1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtbAver1.Location = new System.Drawing.Point(12, 383);
             this.txtbAver1.Name = "txtbAver1";
+            this.txtbAver1.ReadOnly = true;
             this.txtbAver1.Size = new System.Drawing.Size(173, 22);
             this.txtbAver1.TabIndex = 12;
             // 
-            // txtbAver2
+            // txtbAverShow
             // 
-            this.txtbAver2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtbAver2.Location = new System.Drawing.Point(555, 383);
-            this.txtbAver2.Name = "txtbAver2";
-            this.txtbAver2.Size = new System.Drawing.Size(173, 22);
-            this.txtbAver2.TabIndex = 19;
+            this.txtbAverShow.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtbAverShow.Location = new System.Drawing.Point(555, 383);
+            this.txtbAverShow.Name = "txtbAverShow";
+            this.txtbAverShow.Size = new System.Drawing.Size(173, 22);
+            this.txtbAverShow.TabIndex = 19;
             // 
-            // txtbR3_2
+            // txtbR3_Show
             // 
-            this.txtbR3_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtbR3_2.Location = new System.Drawing.Point(555, 337);
-            this.txtbR3_2.Name = "txtbR3_2";
-            this.txtbR3_2.Size = new System.Drawing.Size(173, 22);
-            this.txtbR3_2.TabIndex = 18;
+            this.txtbR3_Show.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtbR3_Show.Location = new System.Drawing.Point(555, 337);
+            this.txtbR3_Show.Name = "txtbR3_Show";
+            this.txtbR3_Show.Size = new System.Drawing.Size(173, 22);
+            this.txtbR3_Show.TabIndex = 18;
             // 
-            // txtbR2_2
+            // txtbR2_Show
             // 
-            this.txtbR2_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtbR2_2.Location = new System.Drawing.Point(555, 291);
-            this.txtbR2_2.Name = "txtbR2_2";
-            this.txtbR2_2.Size = new System.Drawing.Size(173, 22);
-            this.txtbR2_2.TabIndex = 17;
+            this.txtbR2_Show.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtbR2_Show.Location = new System.Drawing.Point(555, 291);
+            this.txtbR2_Show.Name = "txtbR2_Show";
+            this.txtbR2_Show.Size = new System.Drawing.Size(173, 22);
+            this.txtbR2_Show.TabIndex = 17;
             // 
-            // txtbR1_2
+            // txtbR1_Show
             // 
-            this.txtbR1_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtbR1_2.Location = new System.Drawing.Point(555, 245);
-            this.txtbR1_2.Name = "txtbR1_2";
-            this.txtbR1_2.Size = new System.Drawing.Size(173, 22);
-            this.txtbR1_2.TabIndex = 16;
+            this.txtbR1_Show.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtbR1_Show.Location = new System.Drawing.Point(555, 245);
+            this.txtbR1_Show.Name = "txtbR1_Show";
+            this.txtbR1_Show.Size = new System.Drawing.Size(173, 22);
+            this.txtbR1_Show.TabIndex = 16;
             // 
-            // txtbPNum2
+            // txtbPNumShow
             // 
-            this.txtbPNum2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtbPNum2.Location = new System.Drawing.Point(555, 199);
-            this.txtbPNum2.Name = "txtbPNum2";
-            this.txtbPNum2.Size = new System.Drawing.Size(173, 22);
-            this.txtbPNum2.TabIndex = 15;
+            this.txtbPNumShow.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtbPNumShow.Location = new System.Drawing.Point(555, 199);
+            this.txtbPNumShow.Name = "txtbPNumShow";
+            this.txtbPNumShow.Size = new System.Drawing.Size(173, 22);
+            this.txtbPNumShow.TabIndex = 15;
             // 
-            // txtbID2
+            // txtbIDShow
             // 
-            this.txtbID2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtbID2.Location = new System.Drawing.Point(555, 153);
-            this.txtbID2.Name = "txtbID2";
-            this.txtbID2.Size = new System.Drawing.Size(173, 22);
-            this.txtbID2.TabIndex = 14;
+            this.txtbIDShow.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtbIDShow.Location = new System.Drawing.Point(555, 153);
+            this.txtbIDShow.Name = "txtbIDShow";
+            this.txtbIDShow.Size = new System.Drawing.Size(173, 22);
+            this.txtbIDShow.TabIndex = 14;
             // 
-            // txtbName2
+            // txtbNameShow
             // 
-            this.txtbName2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtbName2.Location = new System.Drawing.Point(555, 107);
-            this.txtbName2.Name = "txtbName2";
-            this.txtbName2.Size = new System.Drawing.Size(173, 22);
-            this.txtbName2.TabIndex = 13;
+            this.txtbNameShow.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtbNameShow.Location = new System.Drawing.Point(555, 107);
+            this.txtbNameShow.Name = "txtbNameShow";
+            this.txtbNameShow.Size = new System.Drawing.Size(173, 22);
+            this.txtbNameShow.TabIndex = 13;
             // 
             // btnWriteFile
             // 
@@ -245,6 +217,7 @@
             this.btnWriteFile.TabIndex = 20;
             this.btnWriteFile.Text = "Write to a File";
             this.btnWriteFile.UseVisualStyleBackColor = true;
+            this.btnWriteFile.Click += new System.EventHandler(this.btnWriteFile_Click);
             // 
             // btnAdd
             // 
@@ -254,6 +227,7 @@
             this.btnAdd.TabIndex = 21;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnReadFile
             // 
@@ -263,6 +237,7 @@
             this.btnReadFile.TabIndex = 22;
             this.btnReadFile.Text = "Read a file";
             this.btnReadFile.UseVisualStyleBackColor = true;
+            this.btnReadFile.Click += new System.EventHandler(this.btnReadFile_Click);
             // 
             // label1
             // 
@@ -414,11 +389,21 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // Present
+            // 
+            this.Present.Location = new System.Drawing.Point(327, 12);
+            this.Present.Name = "Present";
+            this.Present.ReadOnly = true;
+            this.Present.Size = new System.Drawing.Size(222, 483);
+            this.Present.TabIndex = 38;
+            this.Present.Text = "";
+            // 
             // Bai04
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(853, 507);
+            this.Controls.Add(this.Present);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label9);
@@ -437,13 +422,13 @@
             this.Controls.Add(this.btnReadFile);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnWriteFile);
-            this.Controls.Add(this.txtbAver2);
-            this.Controls.Add(this.txtbR3_2);
-            this.Controls.Add(this.txtbR2_2);
-            this.Controls.Add(this.txtbR1_2);
-            this.Controls.Add(this.txtbPNum2);
-            this.Controls.Add(this.txtbID2);
-            this.Controls.Add(this.txtbName2);
+            this.Controls.Add(this.txtbAverShow);
+            this.Controls.Add(this.txtbR3_Show);
+            this.Controls.Add(this.txtbR2_Show);
+            this.Controls.Add(this.txtbR1_Show);
+            this.Controls.Add(this.txtbPNumShow);
+            this.Controls.Add(this.txtbIDShow);
+            this.Controls.Add(this.txtbNameShow);
             this.Controls.Add(this.txtbAver1);
             this.Controls.Add(this.txtbR3_1);
             this.Controls.Add(this.txtbR2_1);
@@ -451,9 +436,6 @@
             this.Controls.Add(this.txtbPNum1);
             this.Controls.Add(this.txtbID1);
             this.Controls.Add(this.txtbName1);
-            this.Controls.Add(this.rtb3);
-            this.Controls.Add(this.rtb2);
-            this.Controls.Add(this.rtb1);
             this.Controls.Add(this.lbPage);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.btnBack);
@@ -471,9 +453,6 @@
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Label lbPage;
-        private System.Windows.Forms.RichTextBox rtb1;
-        private System.Windows.Forms.RichTextBox rtb2;
-        private System.Windows.Forms.RichTextBox rtb3;
         private System.Windows.Forms.TextBox txtbName1;
         private System.Windows.Forms.TextBox txtbID1;
         private System.Windows.Forms.TextBox txtbPNum1;
@@ -481,13 +460,13 @@
         private System.Windows.Forms.TextBox txtbR2_1;
         private System.Windows.Forms.TextBox txtbR3_1;
         private System.Windows.Forms.TextBox txtbAver1;
-        private System.Windows.Forms.TextBox txtbAver2;
-        private System.Windows.Forms.TextBox txtbR3_2;
-        private System.Windows.Forms.TextBox txtbR2_2;
-        private System.Windows.Forms.TextBox txtbR1_2;
-        private System.Windows.Forms.TextBox txtbPNum2;
-        private System.Windows.Forms.TextBox txtbID2;
-        private System.Windows.Forms.TextBox txtbName2;
+        private System.Windows.Forms.TextBox txtbAverShow;
+        private System.Windows.Forms.TextBox txtbR3_Show;
+        private System.Windows.Forms.TextBox txtbR2_Show;
+        private System.Windows.Forms.TextBox txtbR1_Show;
+        private System.Windows.Forms.TextBox txtbPNumShow;
+        private System.Windows.Forms.TextBox txtbIDShow;
+        private System.Windows.Forms.TextBox txtbNameShow;
         private System.Windows.Forms.Button btnWriteFile;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnReadFile;
@@ -506,5 +485,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.RichTextBox Present;
     }
 }
