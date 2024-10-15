@@ -74,7 +74,7 @@
             this.btnBack.TabIndex = 0;
             this.btnBack.Text = "BACK";
             this.btnBack.UseVisualStyleBackColor = true;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click_1);
             // 
             // btnNext
             // 
@@ -102,7 +102,6 @@
             this.txtbName1.Name = "txtbName1";
             this.txtbName1.Size = new System.Drawing.Size(173, 22);
             this.txtbName1.TabIndex = 6;
-            this.txtbName1.TextChanged += new System.EventHandler(this.txtbName1_TextChanged);
             // 
             // txtbID1
             // 
@@ -442,7 +441,6 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Bai04";
             this.Text = "Bai04";
-            this.Load += new System.EventHandler(this.Bai04_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
