@@ -157,6 +157,7 @@
             this.txtbAverShow.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtbAverShow.Location = new System.Drawing.Point(555, 383);
             this.txtbAverShow.Name = "txtbAverShow";
+            this.txtbAverShow.ReadOnly = true;
             this.txtbAverShow.Size = new System.Drawing.Size(173, 22);
             this.txtbAverShow.TabIndex = 19;
             // 
@@ -165,6 +166,7 @@
             this.txtbR3_Show.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtbR3_Show.Location = new System.Drawing.Point(555, 337);
             this.txtbR3_Show.Name = "txtbR3_Show";
+            this.txtbR3_Show.ReadOnly = true;
             this.txtbR3_Show.Size = new System.Drawing.Size(173, 22);
             this.txtbR3_Show.TabIndex = 18;
             // 
@@ -173,6 +175,7 @@
             this.txtbR2_Show.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtbR2_Show.Location = new System.Drawing.Point(555, 291);
             this.txtbR2_Show.Name = "txtbR2_Show";
+            this.txtbR2_Show.ReadOnly = true;
             this.txtbR2_Show.Size = new System.Drawing.Size(173, 22);
             this.txtbR2_Show.TabIndex = 17;
             // 
@@ -181,6 +184,7 @@
             this.txtbR1_Show.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtbR1_Show.Location = new System.Drawing.Point(555, 245);
             this.txtbR1_Show.Name = "txtbR1_Show";
+            this.txtbR1_Show.ReadOnly = true;
             this.txtbR1_Show.Size = new System.Drawing.Size(173, 22);
             this.txtbR1_Show.TabIndex = 16;
             // 
@@ -189,6 +193,7 @@
             this.txtbPNumShow.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtbPNumShow.Location = new System.Drawing.Point(555, 199);
             this.txtbPNumShow.Name = "txtbPNumShow";
+            this.txtbPNumShow.ReadOnly = true;
             this.txtbPNumShow.Size = new System.Drawing.Size(173, 22);
             this.txtbPNumShow.TabIndex = 15;
             // 
@@ -197,6 +202,7 @@
             this.txtbIDShow.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtbIDShow.Location = new System.Drawing.Point(555, 153);
             this.txtbIDShow.Name = "txtbIDShow";
+            this.txtbIDShow.ReadOnly = true;
             this.txtbIDShow.Size = new System.Drawing.Size(173, 22);
             this.txtbIDShow.TabIndex = 14;
             // 
@@ -205,6 +211,7 @@
             this.txtbNameShow.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtbNameShow.Location = new System.Drawing.Point(555, 107);
             this.txtbNameShow.Name = "txtbNameShow";
+            this.txtbNameShow.ReadOnly = true;
             this.txtbNameShow.Size = new System.Drawing.Size(173, 22);
             this.txtbNameShow.TabIndex = 13;
             // 

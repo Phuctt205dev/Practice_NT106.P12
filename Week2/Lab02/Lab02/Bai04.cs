@@ -26,14 +26,14 @@ namespace Lab02
                     return;
                 }
 
-                currentIndex++; // Tăng chỉ số trang
+                currentIndex++;
                 if (currentIndex >= peopleData.Count)
                 {
-                    currentIndex = 0; // Quay lại trang đầu nếu vượt quá chỉ số cuối
+                    currentIndex = 0;
                 }
 
-                DisplayCurrentPersonData(); // Hiển thị dữ liệu của trang hiện tại
-                UpdatePaginationDisplay();  // Cập nhật số trang hiển thị
+                DisplayCurrentPersonData();
+                UpdatePaginationDisplay();
             }
             catch (Exception ex)
             {
@@ -50,11 +50,11 @@ namespace Lab02
         {
             if (peopleData.Count > 0)
             {
-                lbPage.Text = $"{currentIndex + 1} / {peopleData.Count}"; // Hiển thị trang hiện tại và tổng số trang
+                lbPage.Text = $"{currentIndex + 1} / {peopleData.Count}";
             }
             else
             {
-                lbPage.Text = "0 / 0"; // Nếu không có dữ liệu
+                lbPage.Text = "0 / 0";
             }
         }
 
@@ -189,7 +189,7 @@ namespace Lab02
                 if (peopleData.Count > 0)
                 {
                     DisplayCurrentPersonData();
-                    UpdatePaginationDisplay(); // Cập nhật hiển thị sau khi đọc dữ liệu từ file
+                    UpdatePaginationDisplay();
                 }
             }
         }
@@ -204,14 +204,14 @@ namespace Lab02
                     return;
                 }
 
-                currentIndex--; // Giảm chỉ số trang
+                currentIndex--;
                 if (currentIndex < 0)
                 {
-                    currentIndex = peopleData.Count - 1; // Quay về trang cuối cùng nếu giảm về âm
+                    currentIndex = peopleData.Count - 1;
                 }
 
-                DisplayCurrentPersonData(); // Hiển thị dữ liệu của trang hiện tại
-                UpdatePaginationDisplay();  // Cập nhật số trang hiển thị
+                DisplayCurrentPersonData();
+                UpdatePaginationDisplay();
             }
             catch (Exception ex)
             {
