@@ -84,6 +84,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Bai01.resx">
+      <DependentUpon>Bai01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bai03.resx">
+      <DependentUpon>Bai03.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>

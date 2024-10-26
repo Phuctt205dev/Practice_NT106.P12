@@ -9,3 +9,15 @@ D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week3\Lab03\Lab03_Clie
 D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week3\Lab03\Lab03_Clients\obj\Debug\Lab03_Clients.exe
 D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week3\Lab03\Lab03_Clients\obj\Debug\Lab03_Clients.pdb
 D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week3\Lab03\Lab03_Clients\obj\Debug\Lab03_Clients.Bai01.resources
+C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week3\Lab03\Lab03_Clients\bin\Debug\Lab03_Clients.exe.config
+C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week3\Lab03\Lab03_Clients\bin\Debug\Lab03_Clients.exe
+C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week3\Lab03\Lab03_Clients\bin\Debug\Lab03_Clients.pdb
+C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week3\Lab03\Lab03_Clients\obj\Debug\Lab03_Clients.csproj.AssemblyReference.cache
+C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week3\Lab03\Lab03_Clients\obj\Debug\Lab03_Clients.Bai01.resources
+C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week3\Lab03\Lab03_Clients\obj\Debug\Lab03_Clients.DashboardClients.resources
+C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week3\Lab03\Lab03_Clients\obj\Debug\Lab03_Clients.Properties.Resources.resources
+C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week3\Lab03\Lab03_Clients\obj\Debug\Lab03_Clients.csproj.GenerateResource.cache
+C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week3\Lab03\Lab03_Clients\obj\Debug\Lab03_Clients.csproj.CoreCompileInputs.cache
+C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week3\Lab03\Lab03_Clients\obj\Debug\Lab03_Clients.exe
+C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week3\Lab03\Lab03_Clients\obj\Debug\Lab03_Clients.pdb
+C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week3\Lab03\Lab03_Clients\obj\Debug\Lab03_Clients.Bai03.resources

@@ -18,3 +18,15 @@ D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week3\Lab03\Lab03\obj\
 D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week3\Lab03\Lab03\obj\Debug\Lab03.csproj.CoreCompileInputs.cache
 D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week3\Lab03\Lab03\obj\Debug\Lab03.exe
 D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week3\Lab03\Lab03\obj\Debug\Lab03.pdb
+C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week3\Lab03\Lab03\bin\Debug\Lab03.exe.config
+C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week3\Lab03\Lab03\bin\Debug\Lab03.exe
+C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week3\Lab03\Lab03\bin\Debug\Lab03.pdb
+C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week3\Lab03\Lab03\obj\Debug\Lab03.csproj.AssemblyReference.cache
+C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week3\Lab03\Lab03\obj\Debug\Lab03.Dashboard.resources
+C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week3\Lab03\Lab03\obj\Debug\Lab03.Properties.Resources.resources
+C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week3\Lab03\Lab03\obj\Debug\Lab03.csproj.GenerateResource.cache
+C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week3\Lab03\Lab03\obj\Debug\Lab03.csproj.CoreCompileInputs.cache
+C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week3\Lab03\Lab03\obj\Debug\Lab03.exe
+C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week3\Lab03\Lab03\obj\Debug\Lab03.pdb
+C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week3\Lab03\Lab03\obj\Debug\Lab03.Bai01.resources
+C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week3\Lab03\Lab03\obj\Debug\Lab03.Bai03.resources
