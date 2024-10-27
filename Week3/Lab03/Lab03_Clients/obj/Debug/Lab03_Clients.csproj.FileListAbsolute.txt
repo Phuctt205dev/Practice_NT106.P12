@@ -21,3 +21,4 @@ C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week3\Lab03\Lab03_Clients\obj\De
 C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week3\Lab03\Lab03_Clients\obj\Debug\Lab03_Clients.exe
 C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week3\Lab03\Lab03_Clients\obj\Debug\Lab03_Clients.pdb
 C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week3\Lab03\Lab03_Clients\obj\Debug\Lab03_Clients.Bai03.resources
+C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week3\Lab03\Lab03_Clients\obj\Debug\Lab03_Clients.Bai04.resources

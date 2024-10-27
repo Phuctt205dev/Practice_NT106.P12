@@ -30,3 +30,4 @@ C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week3\Lab03\Lab03\obj\Debug\Lab0
 C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week3\Lab03\Lab03\obj\Debug\Lab03.pdb
 C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week3\Lab03\Lab03\obj\Debug\Lab03.Bai01.resources
 C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week3\Lab03\Lab03\obj\Debug\Lab03.Bai03.resources
+C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week3\Lab03\Lab03\obj\Debug\Lab03.Bai04.resources
