@@ -3,7 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\PHUONG NGHI\\Desktop\\Practice_NT106.P12\\Week3\\Lab03\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B01DF421-0609-4982-81F7-58F8183DD645}|Lab03_Clients\\Lab03_Clients.csproj|c:\\users\\phuong nghi\\desktop\\practice_nt106.p12\\week3\\lab03\\lab03_clients\\bai04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A88CD05C-92F0-412C-B4B8-6BEFCD0A7895}|Lab03\\Lab03.csproj|C:\\Users\\PHUONG NGHI\\Desktop\\Practice_NT106.P12\\Week3\\Lab03\\lab03\\bai02.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A88CD05C-92F0-412C-B4B8-6BEFCD0A7895}|Lab03\\Lab03.csproj|solutionrelative:lab03\\bai02.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B01DF421-0609-4982-81F7-58F8183DD645}|Lab03_Clients\\Lab03_Clients.csproj|c:\\users\\phuong nghi\\desktop\\practice_nt106.p12\\week3\\lab03\\lab03_clients\\bai04.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B01DF421-0609-4982-81F7-58F8183DD645}|Lab03_Clients\\Lab03_Clients.csproj|solutionrelative:lab03_clients\\bai04.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A88CD05C-92F0-412C-B4B8-6BEFCD0A7895}|Lab03\\Lab03.csproj|C:\\Users\\PHUONG NGHI\\Desktop\\Practice_NT106.P12\\Week3\\Lab03\\lab03\\bai02.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A88CD05C-92F0-412C-B4B8-6BEFCD0A7895}|Lab03\\Lab03.csproj|solutionrelative:lab03\\bai02.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B01DF421-0609-4982-81F7-58F8183DD645}|Lab03_Clients\\Lab03_Clients.csproj|C:\\Users\\PHUONG NGHI\\Desktop\\Practice_NT106.P12\\Week3\\Lab03\\lab03_clients\\bai04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B01DF421-0609-4982-81F7-58F8183DD645}|Lab03_Clients\\Lab03_Clients.csproj|solutionrelative:lab03_clients\\bai04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -21,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A88CD05C-92F0-412C-B4B8-6BEFCD0A7895}|Lab03\\Lab03.csproj|C:\\Users\\PHUONG NGHI\\Desktop\\Practice_NT106.P12\\Week3\\Lab03\\lab03\\bai04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A88CD05C-92F0-412C-B4B8-6BEFCD0A7895}|Lab03\\Lab03.csproj|solutionrelative:lab03\\bai04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B01DF421-0609-4982-81F7-58F8183DD645}|Lab03_Clients\\Lab03_Clients.csproj|C:\\Users\\PHUONG NGHI\\Desktop\\Practice_NT106.P12\\Week3\\Lab03\\lab03_clients\\bai04.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B01DF421-0609-4982-81F7-58F8183DD645}|Lab03_Clients\\Lab03_Clients.csproj|solutionrelative:lab03_clients\\bai04.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A88CD05C-92F0-412C-B4B8-6BEFCD0A7895}|Lab03\\Lab03.csproj|C:\\Users\\PHUONG NGHI\\Desktop\\Practice_NT106.P12\\Week3\\Lab03\\lab03\\bai01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -74,7 +82,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -82,70 +90,91 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Bai04.cs",
-              "DocumentMoniker": "C:\\Users\\PHUONG NGHI\\Desktop\\Practice_NT106.P12\\Week3\\Lab03\\Lab03_Clients\\Bai04.cs",
-              "RelativeDocumentMoniker": "Lab03_Clients\\Bai04.cs",
-              "ToolTip": "C:\\Users\\PHUONG NGHI\\Desktop\\Practice_NT106.P12\\Week3\\Lab03\\Lab03_Clients\\Bai04.cs",
-              "RelativeToolTip": "Lab03_Clients\\Bai04.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAkwIYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T09:27:44.17Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Bai04.cs",
-              "DocumentMoniker": "C:\\Users\\PHUONG NGHI\\Desktop\\Practice_NT106.P12\\Week3\\Lab03\\Lab03\\Bai04.cs",
-              "RelativeDocumentMoniker": "Lab03\\Bai04.cs",
-              "ToolTip": "C:\\Users\\PHUONG NGHI\\Desktop\\Practice_NT106.P12\\Week3\\Lab03\\Lab03\\Bai04.cs",
-              "RelativeToolTip": "Lab03\\Bai04.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAwwHkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T03:34:20.752Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Bai04.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\PHUONG NGHI\\Desktop\\Practice_NT106.P12\\Week3\\Lab03\\Lab03\\Bai04.cs",
-              "RelativeDocumentMoniker": "Lab03\\Bai04.cs",
-              "ToolTip": "C:\\Users\\PHUONG NGHI\\Desktop\\Practice_NT106.P12\\Week3\\Lab03\\Lab03\\Bai04.cs [Design]",
-              "RelativeToolTip": "Lab03\\Bai04.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T03:16:54.038Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Bai04.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\PHUONG NGHI\\Desktop\\Practice_NT106.P12\\Week3\\Lab03\\Lab03_Clients\\Bai04.cs",
-              "RelativeDocumentMoniker": "Lab03_Clients\\Bai04.cs",
-              "ToolTip": "C:\\Users\\PHUONG NGHI\\Desktop\\Practice_NT106.P12\\Week3\\Lab03\\Lab03_Clients\\Bai04.cs [Design]",
-              "RelativeToolTip": "Lab03_Clients\\Bai04.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T03:38:32.006Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "Bai04.Designer.cs",
               "DocumentMoniker": "C:\\Users\\PHUONG NGHI\\Desktop\\Practice_NT106.P12\\Week3\\Lab03\\Lab03_Clients\\Bai04.Designer.cs",
               "RelativeDocumentMoniker": "Lab03_Clients\\Bai04.Designer.cs",
               "ToolTip": "C:\\Users\\PHUONG NGHI\\Desktop\\Practice_NT106.P12\\Week3\\Lab03\\Lab03_Clients\\Bai04.Designer.cs",
               "RelativeToolTip": "Lab03_Clients\\Bai04.Designer.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAlwFsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAmwH8AAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-26T09:30:55.833Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
+              "Title": "Bai02.cs",
+              "DocumentMoniker": "C:\\Users\\PHUONG NGHI\\Desktop\\Practice_NT106.P12\\Week3\\Lab03\\Lab03\\Bai02.cs",
+              "RelativeDocumentMoniker": "Lab03\\Bai02.cs",
+              "ToolTip": "C:\\Users\\PHUONG NGHI\\Desktop\\Practice_NT106.P12\\Week3\\Lab03\\Lab03\\Bai02.cs",
+              "RelativeToolTip": "Lab03\\Bai02.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T15:15:02.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Bai04.cs",
+              "DocumentMoniker": "C:\\Users\\PHUONG NGHI\\Desktop\\Practice_NT106.P12\\Week3\\Lab03\\Lab03_Clients\\Bai04.cs",
+              "RelativeDocumentMoniker": "Lab03_Clients\\Bai04.cs",
+              "ToolTip": "C:\\Users\\PHUONG NGHI\\Desktop\\Practice_NT106.P12\\Week3\\Lab03\\Lab03_Clients\\Bai04.cs",
+              "RelativeToolTip": "Lab03_Clients\\Bai04.cs",
+              "ViewState": "AgIAAIwAAAAAAAAAAAAiwJYAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T09:27:44.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Bai04.cs",
+              "DocumentMoniker": "C:\\Users\\PHUONG NGHI\\Desktop\\Practice_NT106.P12\\Week3\\Lab03\\Lab03\\Bai04.cs",
+              "RelativeDocumentMoniker": "Lab03\\Bai04.cs",
+              "ToolTip": "C:\\Users\\PHUONG NGHI\\Desktop\\Practice_NT106.P12\\Week3\\Lab03\\Lab03\\Bai04.cs",
+              "RelativeToolTip": "Lab03\\Bai04.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAkwCsAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T03:34:20.752Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Bai04.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\PHUONG NGHI\\Desktop\\Practice_NT106.P12\\Week3\\Lab03\\Lab03\\Bai04.cs",
+              "RelativeDocumentMoniker": "Lab03\\Bai04.cs",
+              "ToolTip": "C:\\Users\\PHUONG NGHI\\Desktop\\Practice_NT106.P12\\Week3\\Lab03\\Lab03\\Bai04.cs [Design]",
+              "RelativeToolTip": "Lab03\\Bai04.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T03:16:54.038Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Bai04.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\PHUONG NGHI\\Desktop\\Practice_NT106.P12\\Week3\\Lab03\\Lab03_Clients\\Bai04.cs",
+              "RelativeDocumentMoniker": "Lab03_Clients\\Bai04.cs",
+              "ToolTip": "C:\\Users\\PHUONG NGHI\\Desktop\\Practice_NT106.P12\\Week3\\Lab03\\Lab03_Clients\\Bai04.cs [Design]",
+              "RelativeToolTip": "Lab03_Clients\\Bai04.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T03:38:32.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Bai02.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\PHUONG NGHI\\Desktop\\Practice_NT106.P12\\Week3\\Lab03\\Lab03\\Bai02.cs",
+              "RelativeDocumentMoniker": "Lab03\\Bai02.cs",
+              "ToolTip": "C:\\Users\\PHUONG NGHI\\Desktop\\Practice_NT106.P12\\Week3\\Lab03\\Lab03\\Bai02.cs [Design]",
+              "RelativeToolTip": "Lab03\\Bai02.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T15:10:25.552Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Bai01.cs",
               "DocumentMoniker": "C:\\Users\\PHUONG NGHI\\Desktop\\Practice_NT106.P12\\Week3\\Lab03\\Lab03\\Bai01.cs",
               "RelativeDocumentMoniker": "Lab03\\Bai01.cs",
@@ -153,12 +182,11 @@
               "RelativeToolTip": "Lab03\\Bai01.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAYwBEAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T14:41:12.689Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-25T14:41:12.689Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Bai04.Designer.cs",
               "DocumentMoniker": "C:\\Users\\PHUONG NGHI\\Desktop\\Practice_NT106.P12\\Week3\\Lab03\\Lab03\\Bai04.Designer.cs",
               "RelativeDocumentMoniker": "Lab03\\Bai04.Designer.cs",
@@ -166,12 +194,11 @@
               "RelativeToolTip": "Lab03\\Bai04.Designer.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAYwDgAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T09:49:08.296Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-26T09:49:08.296Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Bai03.cs",
               "DocumentMoniker": "C:\\Users\\PHUONG NGHI\\Desktop\\Practice_NT106.P12\\Week3\\Lab03\\Lab03_Clients\\Bai03.cs",
               "RelativeDocumentMoniker": "Lab03_Clients\\Bai03.cs",
@@ -183,7 +210,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Bai03.Designer.cs",
               "DocumentMoniker": "C:\\Users\\PHUONG NGHI\\Desktop\\Practice_NT106.P12\\Week3\\Lab03\\Lab03_Clients\\Bai03.Designer.cs",
               "RelativeDocumentMoniker": "Lab03_Clients\\Bai03.Designer.cs",
@@ -195,7 +222,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Bai03.cs [Design]",
               "DocumentMoniker": "C:\\Users\\PHUONG NGHI\\Desktop\\Practice_NT106.P12\\Week3\\Lab03\\Lab03_Clients\\Bai03.cs",
               "RelativeDocumentMoniker": "Lab03_Clients\\Bai03.cs",
@@ -206,7 +233,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "Bai03.cs",
               "DocumentMoniker": "C:\\Users\\PHUONG NGHI\\Desktop\\Practice_NT106.P12\\Week3\\Lab03\\Lab03\\Bai03.cs",
               "RelativeDocumentMoniker": "Lab03\\Bai03.cs",
@@ -218,7 +245,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "Bai03.cs [Design]",
               "DocumentMoniker": "C:\\Users\\PHUONG NGHI\\Desktop\\Practice_NT106.P12\\Week3\\Lab03\\Lab03\\Bai03.cs",
               "RelativeDocumentMoniker": "Lab03\\Bai03.cs",
@@ -229,7 +256,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "Bai01.Designer.cs",
               "DocumentMoniker": "C:\\Users\\PHUONG NGHI\\Desktop\\Practice_NT106.P12\\Week3\\Lab03\\Lab03\\Bai01.Designer.cs",
               "RelativeDocumentMoniker": "Lab03\\Bai01.Designer.cs",
@@ -237,24 +264,22 @@
               "RelativeToolTip": "Lab03\\Bai01.Designer.cs",
               "ViewState": "AgIAADMAAAAAAAAAAAAmwFcAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T15:22:15.686Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-25T15:22:15.686Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "Bai01.cs [Design]",
               "DocumentMoniker": "C:\\Users\\PHUONG NGHI\\Desktop\\Practice_NT106.P12\\Week3\\Lab03\\Lab03\\Bai01.cs",
               "RelativeDocumentMoniker": "Lab03\\Bai01.cs",
               "ToolTip": "C:\\Users\\PHUONG NGHI\\Desktop\\Practice_NT106.P12\\Week3\\Lab03\\Lab03\\Bai01.cs [Design]",
               "RelativeToolTip": "Lab03\\Bai01.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T07:50:10.42Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-25T07:50:10.42Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "Bai01.cs",
               "DocumentMoniker": "C:\\Users\\PHUONG NGHI\\Desktop\\Practice_NT106.P12\\Week3\\Lab03\\Lab03_Clients\\Bai01.cs",
               "RelativeDocumentMoniker": "Lab03_Clients\\Bai01.cs",
@@ -266,7 +291,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "Bai01.cs [Design]",
               "DocumentMoniker": "C:\\Users\\PHUONG NGHI\\Desktop\\Practice_NT106.P12\\Week3\\Lab03\\Lab03_Clients\\Bai01.cs",
               "RelativeDocumentMoniker": "Lab03_Clients\\Bai01.cs",

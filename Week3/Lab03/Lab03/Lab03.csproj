@@ -87,6 +87,9 @@
     <EmbeddedResource Include="Bai01.resx">
       <DependentUpon>Bai01.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Bai02.resx">
+      <DependentUpon>Bai02.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Bai03.resx">
       <DependentUpon>Bai03.cs</DependentUpon>
     </EmbeddedResource>

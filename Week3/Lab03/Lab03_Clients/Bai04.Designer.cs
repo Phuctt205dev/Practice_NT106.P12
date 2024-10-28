@@ -125,6 +125,7 @@
             this.tbUsr.Name = "tbUsr";
             this.tbUsr.Size = new System.Drawing.Size(382, 43);
             this.tbUsr.TabIndex = 8;
+           
             // 
             // rtbMess
             // 
@@ -152,7 +153,7 @@
             this.lbParticipants.Name = "lbParticipants";
             this.lbParticipants.Size = new System.Drawing.Size(157, 84);
             this.lbParticipants.TabIndex = 11;
-            this.lbParticipants.SelectedIndexChanged += new System.EventHandler(this.lbParticipants_SelectedIndexChanged);
+            this.lbParticipants.SelectedIndexChanged += new System.EventHandler(this.lbParticipants_SelectedIndexChanged_1);
             // 
             // button1
             // 

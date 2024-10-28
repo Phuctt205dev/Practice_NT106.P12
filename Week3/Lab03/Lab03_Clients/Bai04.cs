@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Lab03_Clients
 {
@@ -65,6 +66,37 @@ namespace Lab03_Clients
             }
         }
 
+        // Phương thức để thêm người tham gia vào ListBox
+        private void AddParticipant(string participantName)
+        {
+            if (!string.IsNullOrEmpty(participantName))
+            {
+                // Kiểm tra nếu đang ở luồng chính hoặc luồng khác
+                if (lbParticipants.InvokeRequired)
+                {
+                    lbParticipants.Invoke((MethodInvoker)delegate {
+                        lbParticipants.Items.Add(participantName);
+                    });
+                }
+                else
+                {
+                    lbParticipants.Items.Add(participantName);
+                }
+            }
+        }
+
+        // Ví dụ: Gọi phương thức AddParticipant khi có người mới tham gia
+        private void OnNewParticipantJoined(string participantName)
+        {
+            AddParticipant(participantName);
+        }
+
+        // Sự kiện giả định gọi hàm trên khi có người tham gia chat
+        private void btnAddParticipant_Click(object sender, EventArgs e)
+        {
+            string newParticipant = "Tên Người Tham Gia"; // Thay bằng tên thực tế
+            OnNewParticipantJoined(newParticipant);
+        }
 
         private void ReceiveData()
         {
@@ -108,15 +140,12 @@ namespace Lab03_Clients
             }
         }
 
+       
 
         private void lbParticipants_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-            if (lbParticipants.SelectedItem != null)
-            {
-                // Giả sử bạn có một TextBox tên là txtSelectedParticipant
-                lbParticipants.Text = lbParticipants.SelectedItem.ToString();
-            }
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -154,5 +183,13 @@ namespace Lab03_Clients
                 MessageBox.Show("Lỗi: " + ex.Message);
             }
         }
+
+        private void lbParticipants_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+           
     }
+
+        
+
     }
+}
