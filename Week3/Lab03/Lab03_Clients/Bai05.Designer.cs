@@ -103,7 +103,7 @@
             this.btnConnect.TabIndex = 5;
             this.btnConnect.Text = "CONNECT";
             this.btnConnect.UseVisualStyleBackColor = true;
-          
+            
             // 
             // label1
             // 

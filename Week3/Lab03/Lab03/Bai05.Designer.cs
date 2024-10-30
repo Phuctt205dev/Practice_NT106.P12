@@ -60,6 +60,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lblStatus = new System.Windows.Forms.Label();
+            this.txtLog = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnlisten
@@ -71,7 +72,7 @@
             this.btnlisten.TabIndex = 0;
             this.btnlisten.Text = "Listen";
             this.btnlisten.UseVisualStyleBackColor = true;
-          
+            this.btnlisten.Click += new System.EventHandler(this.btnlisten_Click);
             // 
             // label1
             // 
@@ -346,11 +347,20 @@
             this.lblStatus.Size = new System.Drawing.Size(578, 52);
             this.lblStatus.TabIndex = 31;
             // 
+            // txtLog
+            // 
+            this.txtLog.Location = new System.Drawing.Point(12, 368);
+            this.txtLog.Multiline = true;
+            this.txtLog.Name = "txtLog";
+            this.txtLog.Size = new System.Drawing.Size(216, 38);
+            this.txtLog.TabIndex = 32;
+            // 
             // ServerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtLog);
             this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -424,5 +434,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblStatus;
+        private System.Windows.Forms.TextBox txtLog;
     }
 }

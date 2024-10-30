@@ -10,14 +10,15 @@ namespace Lab03_Clients
 {
     public partial class Bai05 : Form
     {
-        private Socket clientSocket = null;
         private TcpClient client;
+        private NetworkStream stream;
 
         public Bai05()
         {
-            clientSocket = new Socket(SocketType.Stream, ProtocolType.Tcp);
+           
             InitializeComponent();
         }
 
+      
     }
 }
