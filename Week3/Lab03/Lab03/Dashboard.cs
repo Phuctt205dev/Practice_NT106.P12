@@ -43,7 +43,7 @@ namespace Lab03
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Bai05 button5 = new Bai05();
+            ServerForm button5 = new ServerForm();
             button5.ShowDialog();
         }
     }

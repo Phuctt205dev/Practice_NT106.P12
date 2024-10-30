@@ -24,7 +24,6 @@ namespace Lab03
             InitializeComponent();
         }
         
-
         void StartUnsafeThread()
         {
             int port;

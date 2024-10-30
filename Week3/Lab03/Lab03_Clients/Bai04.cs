@@ -1,25 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Lab03_Clients
 {
-
     public partial class Bai04 : Form
     {
         private TcpClient client;
         private NetworkStream stream;
-        private string receivedData;
+        private Thread receiveThread;
+
         public Bai04()
         {
             InitializeComponent();
@@ -29,123 +22,72 @@ namespace Lab03_Clients
         {
             try
             {
-                // Tạo một kết nối tới server
-                client = new TcpClient(tbIP.Text, int.Parse(tbPort.Text));
+                client = new TcpClient("127.0.0.1", 12345);
                 stream = client.GetStream();
+                rtbSendMess.AppendText("Kết nối đến server thành công.\n");
 
-                // Khởi tạo thread nhận dữ liệu từ server
-                Thread receiveThread = new Thread(new ThreadStart(ReceiveData));
+                receiveThread = new Thread(ReceiveMessages);
                 receiveThread.Start();
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Không thể kết nối đến server: " + ex.Message);
             }
         }
 
         private void btnSend_Click(object sender, EventArgs e)
         {
-            try
-            {
-                if (client == null || !client.Connected)
-                {
-                    MessageBox.Show("Chưa thiết lập kết nối tới server.");
-                    return;
-                }
-                // Lấy dữ liệu từ RichTextBox và gửi đi
-                string message = tbUsr.Text + ": " + rtbMess.Text;
-                byte[] data = Encoding.UTF8.GetBytes(message);
-                stream.Write(data, 0, data.Length);
+            string username = tbUsr.Text;
+            string messageContent = rtbMess.Text;
 
-                // Lưu dữ liệu đã gửi đi vào biến receivedData
-                receivedData = message;
-            }
-            catch (Exception ex)
+            if (!string.IsNullOrEmpty(messageContent))
             {
-                MessageBox.Show(ex.Message);
+                // Định dạng tin nhắn với tên người dùng
+                string message = $"{username}: {messageContent}";
+
+                // Mã hóa tin nhắn và gửi đến server
+                byte[] buffer = Encoding.UTF8.GetBytes(message);
+                stream.Write(buffer, 0, buffer.Length);
+
+                // Hiển thị tin nhắn vừa gửi trong rtbSendMess và xóa nội dung trong rtbMess
+                rtbSendMess.AppendText($"Me: {messageContent}\n");
+                rtbMess.Clear();
             }
         }
 
-        // Phương thức để thêm người tham gia vào ListBox
-        private void AddParticipant(string participantName)
+        private void ReceiveMessages()
         {
-            if (!string.IsNullOrEmpty(participantName))
+            byte[] buffer = new byte[1024];
+            int byteCount;
+
+            while (client.Connected)
             {
-                // Kiểm tra nếu đang ở luồng chính hoặc luồng khác
-                if (lbParticipants.InvokeRequired)
+                try
                 {
-                    lbParticipants.Invoke((MethodInvoker)delegate {
-                        lbParticipants.Items.Add(participantName);
-                    });
-                }
-                else
-                {
-                    lbParticipants.Items.Add(participantName);
-                }
-            }
-        }
-
-        // Ví dụ: Gọi phương thức AddParticipant khi có người mới tham gia
-        private void OnNewParticipantJoined(string participantName)
-        {
-            AddParticipant(participantName);
-        }
-
-        // Sự kiện giả định gọi hàm trên khi có người tham gia chat
-        private void btnAddParticipant_Click(object sender, EventArgs e)
-        {
-            string newParticipant = "Tên Người Tham Gia"; // Thay bằng tên thực tế
-            OnNewParticipantJoined(newParticipant);
-        }
-
-        private void ReceiveData()
-        {
-            try
-            {
-                while (true)
-                {
-                    byte[] buffer = new byte[1024];
-                    int bytesRead = stream.Read(buffer, 0, buffer.Length);
-                    if (bytesRead == 0) continue;
-
-                    string response = Encoding.UTF8.GetString(buffer, 0, bytesRead).Trim();
-
-                    Invoke((MethodInvoker)delegate
+                    byteCount = stream.Read(buffer, 0, buffer.Length);
+                    if (byteCount > 0)
                     {
-                        if (response.StartsWith("ClientList:"))
-                        {
-                            // Cập nhật danh sách người tham gia
-                            lbParticipants.Items.Clear();
-                            string[] clients = response.Substring(11).Split(',');
-                            foreach (string clientName in clients)
-                            {
-                                // Kiểm tra tên client có hợp lệ không
-                                if (!string.IsNullOrWhiteSpace(clientName))
-                                {
-                                    lbParticipants.Items.Add(clientName.Trim());
-                                }
-                            }
-                        }
-                        else
-                        {
-                            // Hiển thị tin nhắn nhận được
-                            rtbSendMess.AppendText(response + "\n");
-                        }
-                    });
+                        string message = Encoding.UTF8.GetString(buffer, 0, byteCount);
+                        rtbSendMess.Invoke((MethodInvoker)(() => rtbSendMess.AppendText(message + "\n")));
+                    }
                 }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Lỗi khi nhận dữ liệu: " + ex.Message);
+                catch (Exception ex)
+                {
+                    rtbSendMess.Invoke((MethodInvoker)(() => rtbSendMess.AppendText("Ngắt kết nối từ server.\n")));
+                    break;
+                }
             }
         }
 
-       
-
-        private void lbParticipants_SelectedIndexChanged(object sender, EventArgs e)
+        private void Bai04_FormClosing(object sender, FormClosingEventArgs e)
         {
+            receiveThread?.Abort();
+            client?.Close();
+        }
 
-            
+        private void rtbSendMess_TextChanged(object sender, EventArgs e)
+        {
+            // Bạn có thể thêm mã ở đây nếu muốn xử lý các sự kiện liên quan đến thay đổi trong rtbSendMess
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -174,7 +116,6 @@ namespace Lab03_Clients
                 }
                 else
                 {
-                    // Nếu không chọn file, có thể gửi một tin nhắn văn bản khác nếu cần
                     MessageBox.Show("Không có file nào được chọn.");
                 }
             }
@@ -183,13 +124,8 @@ namespace Lab03_Clients
                 MessageBox.Show("Lỗi: " + ex.Message);
             }
         }
-
-        private void lbParticipants_SelectedIndexChanged_1(object sender, EventArgs e)
-        {
-           
-    }
-
-        
-
     }
 }
+    
+    
+

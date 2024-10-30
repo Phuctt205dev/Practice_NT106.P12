@@ -1,122 +1,72 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Lab03
 {
     public partial class Bai04 : Form
     {
-        private static TcpListener tcpListener;
+        private TcpListener server;
+        private List<TcpClient> clients = new List<TcpClient>();
+        private Thread listenThread;
 
-        private static readonly List<TcpClient> clients = new List<TcpClient>();
         public Bai04()
         {
             InitializeComponent();
         }
 
-        
-        void StartUnsafeThread()
+        private void btnListen_Click(object sender, EventArgs e)
         {
-            int port;
-            if (!int.TryParse(tbPort.Text, out port))
-            {
-                MessageBox.Show("Vui lòng nhập Port đúng.");
-                return;
-            }
+            server = new TcpListener(IPAddress.Any, 12345);
+            server.Start();
+            rtbMessage.AppendText("Server đang chạy...\n");
 
-            if (tcpListener == null)
-            {
-                tcpListener = new TcpListener(IPAddress.Any, port);
-                tcpListener.Start();
-
-                rtbMessage.AppendText("Đang lắng nghe kết nối từ Clients...\n");
-                while (true)
-                {
-                    tcpListener.BeginAcceptTcpClient(new AsyncCallback(HandleTcpClient), tcpListener);
-                }
-            }
-
-            else
-            {
-                MessageBox.Show("Đã có kết nối đang được lắng nghe.");
-            }
+            listenThread = new Thread(ListenForClients);
+            listenThread.Start();
         }
-        private void HandleTcpClient(IAsyncResult ar)
+        private void ListenForClients()
         {
-            try
-            {
-                TcpListener listener = (TcpListener)ar.AsyncState;
-                TcpClient client = listener.EndAcceptTcpClient(ar);
-                string ip = ((IPEndPoint)client.Client.RemoteEndPoint).Address.ToString();
-
-                rtbMessage.Invoke(new Action(() => rtbMessage.AppendText("Đã kết nối đến: " + ip + "\n")));
-
-                clients.Add(client);
-
-                // Tạo một thread mới để xử lý dữ liệu đến từ client
-                Thread clientThread = new Thread(new ParameterizedThreadStart(HandleClientComm));
-                clientThread.Start(client);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-        private void HandleClientComm(object clientObj)
-        {
-            TcpClient client = (TcpClient)clientObj;
-            NetworkStream stream = client.GetStream();
-
-            byte[] buffer = new byte[1024];
-            int bytesRead;
-
             while (true)
             {
-                try
-                {
-                    bytesRead = stream.Read(buffer, 0, buffer.Length);
-                    if (bytesRead > 0)
-                    {
-                        string message = Encoding.UTF8.GetString(buffer, 0, bytesRead);
-                        rtbMessage.Invoke(new Action(() => rtbMessage.AppendText("Tin nhắn từ " + ((IPEndPoint)client.Client.RemoteEndPoint).Address.ToString() + ": " + message + "\n")));
-                        BroadcastMessage(message);
-                    }
-                }
-                catch
-                {
-                    // Kết nối đã bị đóng
-                    clients.Remove(client);
-                    rtbMessage.Invoke(new Action(() => rtbMessage.AppendText(((IPEndPoint)client.Client.RemoteEndPoint).Address.ToString() + " đã ngắt kết nối.\n")));
-                    break;
-                }
+                TcpClient client = server.AcceptTcpClient();
+                clients.Add(client);
+                rtbMessage.Invoke((MethodInvoker)(() => rtbMessage.AppendText("Client mới kết nối.\n")));
+
+                Thread clientThread = new Thread(HandleClient);
+                clientThread.Start(client);
             }
         }
+        private void HandleClient(object obj)
+        {
+            TcpClient client = (TcpClient)obj;
+            NetworkStream stream = client.GetStream();
+            byte[] buffer = new byte[1024];
+            int byteCount;
 
-        private void BroadcastMessage(string message)
+            while ((byteCount = stream.Read(buffer, 0, buffer.Length)) > 0)
+            {
+                string message = Encoding.UTF8.GetString(buffer, 0, byteCount);
+                rtbMessage.Invoke((MethodInvoker)(() => rtbMessage.AppendText(message + "\n")));
+                Broadcast(message);
+            }
+
+            clients.Remove(client);
+            client.Close();
+        }
+        private void Broadcast(string message)
         {
             byte[] buffer = Encoding.UTF8.GetBytes(message);
-
-            foreach (TcpClient client in clients)
+            foreach (var client in clients)
             {
                 NetworkStream stream = client.GetStream();
                 stream.Write(buffer, 0, buffer.Length);
             }
         }
 
-        private void btnListen_Click(object sender, EventArgs e)
-        {
-            CheckForIllegalCrossThreadCalls = false;
-            Thread serverThread = new Thread(new ThreadStart(StartUnsafeThread));
-            serverThread.Start();
-        }
     }
 }

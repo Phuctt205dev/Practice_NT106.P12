@@ -1,20 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
+using System.Net;
+using System.Net.Sockets;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace Lab03
 {
-    public partial class Bai05 : Form
+    public partial class ServerForm : Form
     {
-        public Bai05()
+        private TcpListener listener;
+        private Dictionary<TcpClient, Thread> clients = new Dictionary<TcpClient, Thread>();
+
+        public ServerForm()
         {
             InitializeComponent();
         }
+
+       
+
     }
 }

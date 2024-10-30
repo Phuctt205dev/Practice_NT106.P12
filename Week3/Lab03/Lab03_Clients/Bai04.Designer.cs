@@ -29,48 +29,16 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Bai04));
-            this.IP = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.tbIP = new System.Windows.Forms.TextBox();
             this.btnConnect = new System.Windows.Forms.Button();
             this.rtbSendMess = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.tbPort = new System.Windows.Forms.TextBox();
             this.tbUsr = new System.Windows.Forms.TextBox();
             this.rtbMess = new System.Windows.Forms.TextBox();
             this.btnSend = new System.Windows.Forms.Button();
             this.lbParticipants = new System.Windows.Forms.ListBox();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // IP
-            // 
-            this.IP.AutoSize = true;
-            this.IP.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IP.Location = new System.Drawing.Point(12, 48);
-            this.IP.Name = "IP";
-            this.IP.Size = new System.Drawing.Size(33, 26);
-            this.IP.TabIndex = 0;
-            this.IP.Text = "IP";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(467, 48);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 26);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "PORT";
-            // 
-            // tbIP
-            // 
-            this.tbIP.Location = new System.Drawing.Point(51, 48);
-            this.tbIP.Multiline = true;
-            this.tbIP.Name = "tbIP";
-            this.tbIP.Size = new System.Drawing.Size(249, 39);
-            this.tbIP.TabIndex = 2;
             // 
             // btnConnect
             // 
@@ -84,11 +52,12 @@
             // 
             // rtbSendMess
             // 
-            this.rtbSendMess.Location = new System.Drawing.Point(17, 128);
+            this.rtbSendMess.Location = new System.Drawing.Point(17, 12);
             this.rtbSendMess.Name = "rtbSendMess";
-            this.rtbSendMess.Size = new System.Drawing.Size(771, 125);
+            this.rtbSendMess.Size = new System.Drawing.Size(466, 244);
             this.rtbSendMess.TabIndex = 4;
             this.rtbSendMess.Text = "";
+            this.rtbSendMess.TextChanged += new System.EventHandler(this.rtbSendMess_TextChanged);
             // 
             // label1
             // 
@@ -110,14 +79,6 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Message";
             // 
-            // tbPort
-            // 
-            this.tbPort.Location = new System.Drawing.Point(543, 48);
-            this.tbPort.Multiline = true;
-            this.tbPort.Name = "tbPort";
-            this.tbPort.Size = new System.Drawing.Size(245, 39);
-            this.tbPort.TabIndex = 7;
-            // 
             // tbUsr
             // 
             this.tbUsr.Location = new System.Drawing.Point(185, 286);
@@ -125,7 +86,6 @@
             this.tbUsr.Name = "tbUsr";
             this.tbUsr.Size = new System.Drawing.Size(382, 43);
             this.tbUsr.TabIndex = 8;
-           
             // 
             // rtbMess
             // 
@@ -149,11 +109,10 @@
             // 
             this.lbParticipants.FormattingEnabled = true;
             this.lbParticipants.ItemHeight = 16;
-            this.lbParticipants.Location = new System.Drawing.Point(304, 38);
+            this.lbParticipants.Location = new System.Drawing.Point(508, 12);
             this.lbParticipants.Name = "lbParticipants";
-            this.lbParticipants.Size = new System.Drawing.Size(157, 84);
+            this.lbParticipants.Size = new System.Drawing.Size(280, 244);
             this.lbParticipants.TabIndex = 11;
-            this.lbParticipants.SelectedIndexChanged += new System.EventHandler(this.lbParticipants_SelectedIndexChanged_1);
             // 
             // button1
             // 
@@ -176,14 +135,10 @@
             this.Controls.Add(this.btnSend);
             this.Controls.Add(this.rtbMess);
             this.Controls.Add(this.tbUsr);
-            this.Controls.Add(this.tbPort);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.rtbSendMess);
             this.Controls.Add(this.btnConnect);
-            this.Controls.Add(this.tbIP);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.IP);
             this.Name = "Bai04";
             this.Text = "Bai04";
             this.ResumeLayout(false);
@@ -192,15 +147,10 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label IP;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox tbIP;
         private System.Windows.Forms.Button btnConnect;
         private System.Windows.Forms.RichTextBox rtbSendMess;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox tbPort;
         private System.Windows.Forms.TextBox tbUsr;
         private System.Windows.Forms.TextBox rtbMess;
         private System.Windows.Forms.Button btnSend;

@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Lab03_Clients
@@ -28,14 +22,17 @@ namespace Lab03_Clients
                 int port = Convert.ToInt32(txtPort.Text);
                 IPEndPoint ipend = new IPEndPoint(ipadd, port);
                 Byte[] sendBytes = Encoding.UTF8.GetBytes(txtMessage.Text);
+
                 udpClient.Send(sendBytes, sendBytes.Length, ipend);
 
+                // Log để kiểm tra client đã gửi
+                MessageBox.Show("Đã gửi: " + txtMessage.Text);
 
                 udpClient.Close();
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.ToString());
+                MessageBox.Show("Lỗi khi gửi dữ liệu: " + ex.Message);
             }
         }
     }

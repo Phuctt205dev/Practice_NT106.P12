@@ -46,12 +46,12 @@
             // listView1
             // 
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(12, 117);
+            this.listView1.Location = new System.Drawing.Point(12, 113);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(776, 309);
+            this.listView1.Size = new System.Drawing.Size(776, 299);
             this.listView1.TabIndex = 2;
             this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
+            this.listView1.View = System.Windows.Forms.View.Details;
             // 
             // Bai02
             // 

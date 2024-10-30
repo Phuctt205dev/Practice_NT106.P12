@@ -1,30 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Lab03
 {
     public partial class Bai01 : Form
     {
-        private UdpClient udpServer;
-        private Thread serverThread;
         private Thread listenThread;
 
         public Bai01()
         {
             InitializeComponent();
+            listView1.View = View.Details;  // Hiển thị theo dạng chi tiết
+            listView1.Columns.Add("IP", 100);
+            listView1.Columns.Add("Message", 300);
         }
-
-        
 
         private void Listen()
         {
@@ -36,22 +29,34 @@ namespace Lab03
             }
 
             UdpClient udpClient = new UdpClient(port);
+            MessageBox.Show("Server bắt đầu lắng nghe trên cổng " + port);
 
             while (true)
             {
-                IPEndPoint remoteIpEndPoint = new IPEndPoint(IPAddress.Any, 0);
-                byte[] receiveBytes = udpClient.Receive(ref remoteIpEndPoint);
-                string returnData = Encoding.UTF8.GetString(receiveBytes);
-                string message = remoteIpEndPoint.Address.ToString().Trim() + ": " + returnData.ToString().Trim();
+                try
+                {
+                    IPEndPoint remoteIpEndPoint = new IPEndPoint(IPAddress.Any, 0);
+                    byte[] receiveBytes = udpClient.Receive(ref remoteIpEndPoint);
+                    string returnData = Encoding.UTF8.GetString(receiveBytes);
+                    string message = remoteIpEndPoint.Address.ToString() + ": " + returnData.Trim();
 
-                // Sử dụng phương thức Invoke để gọi hàm AddMessageToListView trên UI Thread
-                txtReceivedMessages.Invoke(new Action(() => AddMessageToRichTextBox(message)));
+                    // Thêm log để kiểm tra tin nhắn nhận được
+                    Console.WriteLine("Nhận từ: " + message);
+
+                    listView1.Invoke(new Action(() => AddMessageToListView(remoteIpEndPoint.Address.ToString(), returnData)));
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi khi nhận dữ liệu: " + ex.Message);
+                }
             }
         }
 
-        private void AddMessageToRichTextBox(string message)
+        private void AddMessageToListView(string ip, string message)
         {
-            txtReceivedMessages.AppendText(message.Trim() + "\t\n");
+            var item = new ListViewItem(ip);
+            item.SubItems.Add(message);
+            listView1.Items.Add(item);
         }
 
         private void button1_Click(object sender, EventArgs e)
