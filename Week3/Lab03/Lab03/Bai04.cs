@@ -1,18 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Net.Sockets;
 using System.Net;
 using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Threading;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Windows.Forms;
 using System.IO;
-using System.Runtime.CompilerServices;
+using System.Drawing;
+using System.Linq;
 
 namespace Lab03
 {
@@ -27,11 +22,7 @@ namespace Lab03
         {
             InitializeComponent();
             lv_ListAccount.Items.Add(new ListViewItem() { Text = "DANH SÁCH" });
-            btn_Send.Enabled = false;
-            btn_SendImage.Enabled = false;
             btn_Disconnect.Enabled = false;
-            btn_ListClientsConnecting.Enabled = false;
-            txt_Message.ReadOnly = true;
         }
 
         private void btn_Listen_Click(object sender, EventArgs e)
@@ -39,16 +30,12 @@ namespace Lab03
             CheckForIllegalCrossThreadCalls = false;
             if (!int.TryParse(txt_Port.Text, out int test1) || txt_Port.Text == "")
             {
-                MessageBox.Show("mời nhập đúng cổng là một số nguyên!!!");
+                MessageBox.Show("Mời nhập đúng cổng là một số nguyên!!!");
                 return;
             }
             Connect();
             btn_Listen.Enabled = false;
-            btn_Send.Enabled = true;
-            btn_SendImage.Enabled = true;
             btn_Disconnect.Enabled = true;
-            btn_ListClientsConnecting.Enabled = true;
-            txt_Message.ReadOnly = false;
         }
         void Connect()
         {
@@ -58,6 +45,7 @@ namespace Lab03
             server = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             server.Bind(TCP);
             AddMessage("Bắt đầu lắng nghe tại port " + txt_Port.Text);
+
             Thread Listen = new Thread(() =>
             {
                 try
@@ -67,9 +55,7 @@ namespace Lab03
                         server.Listen(100);
                         Socket client = server.Accept();
                         clientList.Add(client);
-                        //clientList.Remove(client);
-                        //listView1.Items.Add(new ListViewItem("New client connected"));
-                        // Bắt đầu lắng nghe tin nhắn từ client
+
                         Thread ReceiveThread = new Thread(() => Receive(client));
                         ReceiveThread.IsBackground = true;
                         ReceiveThread.Start();
@@ -88,31 +74,27 @@ namespace Lab03
         {
             lv_Message.Items.Add(new ListViewItem() { Text = s });
         }
+
         private void btn_Disconnect_Click(object sender, EventArgs e)
         {
-
             try
             {
-
                 if (clientList != null)
                 {
-                    txt_Message.Text = "Server ngắt kết nối ";
+                    AddMessage("Server ngắt kết nối ");
                     foreach (Socket item in clientList)
                     {
-                        Send(item);
+                        item.Close();
                     }
-                    txt_Message.Text = "";
-                    AddMessage("Server ngắt kết nối ");
+                    clientList.Clear();
+                    clientDictionary.Clear();
                 }
                 server?.Close();
             }
             catch { }
+
             btn_Listen.Enabled = true;
-            btn_Send.Enabled = false;
-            btn_SendImage.Enabled = false;
             btn_Disconnect.Enabled = false;
-            btn_ListClientsConnecting.Enabled = false;
-            txt_Message.ReadOnly = true;
         }
         void Receive(Socket client)
         {
@@ -171,18 +153,9 @@ namespace Lab03
                         client.Receive(imageSizeBytes);
                         int imageSize = BitConverter.ToInt32(imageSizeBytes, 0);
 
-                        // Nhận ảnh
                         byte[] imageData = new byte[imageSize];
                         client.Receive(imageData);
                         File.WriteAllBytes("image.jpg", imageData);
-
-                        //using (MemoryStream ms = new MemoryStream(imageData))
-                        //{
-                        //    pictureBox1.Image = null;
-                        //    Image image = Image.FromStream(ms);
-                        //    Image thumb = image.GetThumbnailImage(200, 200, () => false, IntPtr.Zero);
-                        //    pictureBox1.Image = thumb;
-                        //}
 
                         if (message.Contains('$'))
                         {
@@ -235,10 +208,6 @@ namespace Lab03
                         clientDictionary.Remove(words[0].Trim());
                         clientList.Remove(client);
                     }
-
-
-
-
                 }
             }
             catch (Exception ex)
@@ -246,76 +215,9 @@ namespace Lab03
                 AddMessage(ex.Message);
             }
         }
-        private void btn_ListClientsConnecting_Click(object sender, EventArgs e)
-        {
-            lb_Client.Items.Clear();
-            if (clientDictionary != null)
-            {
-                try
-                {
-                    foreach (string key in clientDictionary.Keys)
-                    {
-                        lb_Client.Items.Add(key);
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-            }
-
-        }
-
-        private void btn_Send_Click(object sender, EventArgs e)
-        {
-            if (clientList != null)
-            {
-                foreach (Socket item in clientList)
-                {
-                    Send(item);
-                }
-                AddMessage("Admin: " + txt_Message.Text);
-                txt_Message.Clear();
-            }
-        }
-        void Send(Socket client)
-        {
-
-            if ((client != null) && (txt_Message.Text != string.Empty))
-            {
-                client.Send(Encoding.UTF8.GetBytes("Admin : " + txt_Message.Text));
-            }
-
-        }
-        bool check(string s)
-        {
-            string compareString = s;
-            bool found = false;
-            foreach (ListViewItem item in lv_ListAccount.Items)
-            {
-                if (item.Text.Equals(compareString))
-                {
-                    found = true;
-                    break;
-                }
-            }
-            return found;
-
-       
-    }
-        private void btn_SendImage_Click(object sender, EventArgs e)
-        {
-            // Đọc đường dẫn file ảnh
-            OpenFileDialog ofd = new OpenFileDialog();
-            ofd.ShowDialog();
-            string k = ofd.FileName;
-            //MessageBox.Show(k);
-            SI(k);
-        }
         void SI(string k)
         {
-            //MessageBox.Show(k);
-            byte[] imageData = File.ReadAllBytes(k);
+             byte[] imageData = File.ReadAllBytes(k);
             // Gửi kích thước ảnh
             byte[] imageSizeBytes = BitConverter.GetBytes(imageData.Length);
 
@@ -337,26 +239,9 @@ namespace Lab03
                 }
             }
         }
-        private void lb_Client_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (lb_Client.SelectedIndex != -1)
-            {
-                // Lấy nội dung của mục được chọn
-                string selected = lb_Client.SelectedItem.ToString();
-
-                string message = lb_Client.Text;
-                byte[] messageBytes = Encoding.ASCII.GetBytes(message);
-                if (selected != null)
-                {
-                    Socket clientASocket = clientDictionary[selected]; // tạo socket riêng
-                    clientASocket.Send(messageBytes); // gửi tin nhắn từ server đến 1 client
-                }
-
-            }
-        }
+       
         void PrivateImageSend(string x)
         {
-            //MessageBox.Show(k);
             byte[] imageData = File.ReadAllBytes("image.jpg");
             // Gửi kích thước ảnh
             byte[] imageSizeBytes = BitConverter.GetBytes(imageData.Length);
@@ -369,5 +254,84 @@ namespace Lab03
             // Gửi dữ liệu ảnh
             clientASocket.Send(imageData);
         }
+        void ReceiveTextFile(Socket client, string message)
+        {
+            try
+            {
+                // Nhận kích thước tệp .txt
+                byte[] textSizeBytes = new byte[4];
+                int received = client.Receive(textSizeBytes);
+                if (received == 4)
+                {
+                    int textSize = BitConverter.ToInt32(textSizeBytes, 0);
+
+                    // Kiểm tra kích thước tệp
+                    Console.WriteLine("Kích thước tệp nhận được: " + textSize);
+
+                    // Nhận nội dung tệp .txt
+                    byte[] textData = new byte[textSize];
+                    int totalReceived = 0;
+                    while (totalReceived < textSize)
+                    {
+                        int bytesReceived = client.Receive(textData, totalReceived, textSize - totalReceived, SocketFlags.None);
+                        if (bytesReceived == 0) break;
+                        totalReceived += bytesReceived;
+                    }
+
+                    // Kiểm tra nếu nhận đủ dữ liệu
+                    if (totalReceived == textSize)
+                    {
+                        // Chuyển đổi dữ liệu byte thành chuỗi theo UTF-8
+                        string fileContent = Encoding.UTF8.GetString(textData);
+
+                        // Hiển thị nội dung file trên server
+                        Console.WriteLine("Nội dung file .txt từ client:");
+                        Console.WriteLine(fileContent);
+
+                        // Hiển thị nội dung file trên UI của server
+                        AddMessage("Nội dung file .txt từ client:\n" + fileContent);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Dữ liệu nhận không đủ. Chỉ nhận được " + totalReceived + " byte.");
+                    }
+
+                    // Phân phối file .txt cho các client khác
+                    foreach (Socket otherClient in clientList)
+                    {
+                        if (otherClient != client)
+                        {
+                            otherClient.Send(Encoding.UTF8.GetBytes(message));
+                            otherClient.Send(textSizeBytes);
+                            otherClient.Send(textData);
+                        }
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Không nhận được kích thước file.");
+                }
+            }
+            catch (Exception ex)
+            {
+                AddMessage("Lỗi khi nhận file .txt: " + ex.Message);
+            }
+        }
+
+
+
+        bool check(string clientName)
+        {
+            foreach (ListViewItem item in lv_ListAccount.Items)
+            {
+                if (item.Text.Equals(clientName))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+       
     }
 }

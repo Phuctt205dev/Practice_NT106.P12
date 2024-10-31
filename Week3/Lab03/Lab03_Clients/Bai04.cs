@@ -9,20 +9,13 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Net.Mime.MediaTypeNames;
-using Image = System.Drawing.Image;
 using System.Threading;
-using System.Xml.Linq;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.IO;
-
 
 namespace Lab03_Clients
 {
     public partial class Bai04 : Form
     {
-
-
         public Bai04()
         {
             InitializeComponent();
@@ -34,6 +27,7 @@ namespace Lab03_Clients
             txt_Message.ReadOnly = true;
             txt_Name1.ReadOnly = true;
         }
+
         IPEndPoint IP;
         Socket client;
 
@@ -67,6 +61,7 @@ namespace Lab03_Clients
                 MessageBox.Show("Khong the ket noi toi server !", "Loi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+
             Thread listen = new Thread(Receive);
             listen.IsBackground = true;
             listen.Start();
@@ -121,46 +116,74 @@ namespace Lab03_Clients
 
             }
         }
-        private void Receive()
+
+ private void Receive()
+{
+    try
+    {
+        while (true)
         {
-            try
+            byte[] initialData = new byte[1024];
+            int receivedBytes = client.Receive(initialData);
+            string mess = Encoding.UTF8.GetString(initialData, 0, receivedBytes).Trim('\0');
+
+            if (mess.Contains("(PR.IMAGE)")) 
             {
-                while (true)
+                byte[] imageSizeBytes = new byte[4];
+                client.Receive(imageSizeBytes);
+                int imageSize = BitConverter.ToInt32(imageSizeBytes, 0);
+
+                // Nhận ảnh
+                byte[] imageData = new byte[imageSize];
+                int totalReceived = 0;
+                while (totalReceived < imageSize)
                 {
-                    byte[] data = new byte[1024];
-                    client?.Receive(data);
-                    string mess = Encoding.UTF8.GetString(data);
-                    AddMess(mess);
-
-                    if (mess.Contains("(PR.IMAGE)"))
-                    {
-                        byte[] imageSizeBytes = new byte[4];
-                        client?.Receive(imageSizeBytes);
-                        int imageSize = BitConverter.ToInt32(imageSizeBytes, 0);
-
-                        // Nhận ảnh
-                        byte[] imageData = new byte[imageSize];
-                        client?.Receive(imageData);
-                        using (MemoryStream ms = new MemoryStream(imageData))
-                        {
-                            pb_Avatar.Image = null;
-                            Image image = Image.FromStream(ms);
-                            Image thumb = image.GetThumbnailImage(120, 120, () => false, IntPtr.Zero);
-                            pb_Avatar.Image = thumb;
-                        }
-                    }
-
-
+                    int bytesReceived = client.Receive(imageData, totalReceived, imageSize - totalReceived, SocketFlags.None);
+                    if (bytesReceived == 0) break;
+                    totalReceived += bytesReceived;
                 }
+
+                using (MemoryStream ms = new MemoryStream(imageData))
+                {
+                    pb_Avatar.Image = null;
+                    Image image = Image.FromStream(ms);
+                    Image thumb = image.GetThumbnailImage(120, 120, () => false, IntPtr.Zero);
+                    pb_Avatar.Image = thumb;
+                }
+                AddMess("Đã nhận ảnh từ server.");
             }
-            catch
+            else if (mess.Contains("(TXT)")) 
             {
-                Close();
+                byte[] textSizeBytes = new byte[4];
+                client.Receive(textSizeBytes);
+                int textSize = BitConverter.ToInt32(textSizeBytes, 0);
+
+                byte[] textData = new byte[textSize];
+                int totalReceived = 0;
+                while (totalReceived < textSize)
+                {
+                    int bytesReceived = client.Receive(textData, totalReceived, textSize - totalReceived, SocketFlags.None);
+                    if (bytesReceived == 0) break;
+                    totalReceived += bytesReceived;
+                }
+
+                string fileContent = Encoding.UTF8.GetString(textData);
+                AddMess("Nội dung file .txt:\n" + fileContent);
+            }
+            else 
+            {
+                AddMess(mess);
             }
         }
+    }
+    catch (Exception ex)
+    {
+        MessageBox.Show("Lỗi trong quá trình nhận dữ liệu: " + ex.Message);
+        Close();
+    }
+}
         void AddMess(string s)
         {
-            // string a = txtName.Text + ": " + s;
             lv_ShowConversation.Items.Add(new ListViewItem() { Text = s });
             txt_Message.Clear();
         }
@@ -179,9 +202,6 @@ namespace Lab03_Clients
             }
             client?.Send(Encoding.UTF8.GetBytes(txt_Name.Text + " (IMG) " + s));
 
-
-
-            // Gửi kích thước ảnh
             int imageSize = imageData.Length;
             byte[] imageSizeBytes = BitConverter.GetBytes(imageSize);
             client?.Send(imageSizeBytes);
@@ -193,17 +213,60 @@ namespace Lab03_Clients
             pb_Avatar.Image = thumb; // hiển thị ảnh lên PictureBox
 
         }
-    
 
-private void client_t4_FormClosed(object sender, FormClosedEventArgs e)
-{
-    MessageBox.Show("Thoát?");
-    try
-    {
-        client?.Send(Encoding.UTF8.GetBytes(txt_Name.Text + " đã rời phòng "));
-        client?.Close();
-    }
-    catch { }
-}
+        private void client_t4_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            MessageBox.Show("Thoát?");
+            try
+            {
+                client?.Send(Encoding.UTF8.GetBytes(txt_Name.Text + " đã rời phòng "));
+                client?.Close();
+            }
+            catch { }
+        }
+       
+
+
+
+        private void txt_IP_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_SendTxt_Click_1(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Text Files|*.txt"; 
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    // Đọc nội dung của file .txt
+                    string fileContent = File.ReadAllText(openFileDialog.FileName);
+                    byte[] textData = Encoding.UTF8.GetBytes(fileContent); // Chuyển đổi thành mảng byte
+
+                    // Gửi thông báo rằng có file đang được gửi
+                    string message = txt_Name.Text + " đã gửi file .txt (TXT)";
+                    client.Send(Encoding.UTF8.GetBytes(message));
+
+                    // Gửi kích thước file
+                    client.Send(BitConverter.GetBytes(textData.Length));
+
+                    // Gửi nội dung file
+                    client.Send(textData);
+
+                    AddMess("Đã gửi file .txt."); // Hiển thị thông báo trên giao diện
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi gửi file .txt: " + ex.Message); // Thông báo lỗi
+                }
+            }
+        }
+        private void lv_ShowConversation_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
