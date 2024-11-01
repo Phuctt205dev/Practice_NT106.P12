@@ -128,9 +128,38 @@ namespace Lab03
                         }
                         catch { }
 
-
-
                     }
+                    else if (message.Contains("(TXT)"))
+                    {
+                        byte[] textSizeBytes = new byte[4];
+                        client.Receive(textSizeBytes);
+                        int textSize = BitConverter.ToInt32(textSizeBytes, 0);
+
+                        byte[] textData = new byte[textSize];
+                        int totalReceived = 0;
+                        while (totalReceived < textSize)
+                        {
+                            int bytesReceived = client.Receive(textData, totalReceived, textSize - totalReceived, SocketFlags.None);
+                            if (bytesReceived == 0) break;
+                            totalReceived += bytesReceived;
+                        }
+
+                        // Chuyển đổi nội dung văn bản sang UTF-8
+                        string fileContent = Encoding.UTF8.GetString(textData);
+                        AddMessage("Nội dung file .txt:\n" + fileContent);
+
+                        // Gửi nội dung tệp đến tất cả client
+                        byte[] contentBytes = Encoding.UTF8.GetBytes("(TXT) " + fileContent);
+                        foreach (Socket item in clientList)
+                        {
+                            if (item != client) // Không gửi lại cho client đã gửi
+                            {
+                                item.Send(contentBytes);
+                            }
+                        }
+                    }
+
+
                     else if (message.Contains("đã vào phòng") && client != null)
                     {
                         string[] words = message.Split(new[] { "đã vào phòng" }, StringSplitOptions.None);
@@ -139,7 +168,6 @@ namespace Lab03
                         {
                             AddMessage(message);
                             lv_ListAccount.Items.Add(new ListViewItem() { Text = result });
-                            //dsclient.Add(result, client);
                             clientDictionary.Add(words[0].Trim(), client);
 
                         }
@@ -220,8 +248,6 @@ namespace Lab03
              byte[] imageData = File.ReadAllBytes(k);
             // Gửi kích thước ảnh
             byte[] imageSizeBytes = BitConverter.GetBytes(imageData.Length);
-
-
             pb_Avatar.Image = null;
             Image image = Image.FromFile(k);
             Image thumb = image.GetThumbnailImage(400, 450, () => false, IntPtr.Zero);
@@ -249,75 +275,11 @@ namespace Lab03
             Socket clientASocket = clientDictionary[x]; // tạo socket riêng 
             clientASocket.Send(Encoding.UTF8.GetBytes("(PR.IMAGE) Có người gửi riêng ảnh cho bạn")); // gửi tin nhắn từ server đến 1 client\
 
-
-            clientASocket.Send(imageSizeBytes);
-            // Gửi dữ liệu ảnh
-            clientASocket.Send(imageData);
+                        clientASocket.Send(imageSizeBytes);
+                        clientASocket.Send(imageData);
         }
-        void ReceiveTextFile(Socket client, string message)
-        {
-            try
-            {
-                // Nhận kích thước tệp .txt
-                byte[] textSizeBytes = new byte[4];
-                int received = client.Receive(textSizeBytes);
-                if (received == 4)
-                {
-                    int textSize = BitConverter.ToInt32(textSizeBytes, 0);
-
-                    // Kiểm tra kích thước tệp
-                    Console.WriteLine("Kích thước tệp nhận được: " + textSize);
-
-                    // Nhận nội dung tệp .txt
-                    byte[] textData = new byte[textSize];
-                    int totalReceived = 0;
-                    while (totalReceived < textSize)
-                    {
-                        int bytesReceived = client.Receive(textData, totalReceived, textSize - totalReceived, SocketFlags.None);
-                        if (bytesReceived == 0) break;
-                        totalReceived += bytesReceived;
-                    }
-
-                    // Kiểm tra nếu nhận đủ dữ liệu
-                    if (totalReceived == textSize)
-                    {
-                        // Chuyển đổi dữ liệu byte thành chuỗi theo UTF-8
-                        string fileContent = Encoding.UTF8.GetString(textData);
-
-                        // Hiển thị nội dung file trên server
-                        Console.WriteLine("Nội dung file .txt từ client:");
-                        Console.WriteLine(fileContent);
-
-                        // Hiển thị nội dung file trên UI của server
-                        AddMessage("Nội dung file .txt từ client:\n" + fileContent);
-                    }
-                    else
-                    {
-                        Console.WriteLine("Dữ liệu nhận không đủ. Chỉ nhận được " + totalReceived + " byte.");
-                    }
-
-                    // Phân phối file .txt cho các client khác
-                    foreach (Socket otherClient in clientList)
-                    {
-                        if (otherClient != client)
-                        {
-                            otherClient.Send(Encoding.UTF8.GetBytes(message));
-                            otherClient.Send(textSizeBytes);
-                            otherClient.Send(textData);
-                        }
-                    }
-                }
-                else
-                {
-                    Console.WriteLine("Không nhận được kích thước file.");
-                }
-            }
-            catch (Exception ex)
-            {
-                AddMessage("Lỗi khi nhận file .txt: " + ex.Message);
-            }
-        }
-
+        // Giả sử 'message' là tin nhắn nhận được từ một client
+       
 
 
         bool check(string clientName)
@@ -332,6 +294,5 @@ namespace Lab03
             return false;
         }
 
-       
     }
 }
