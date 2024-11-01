@@ -1,0 +1,15 @@
+C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week4\Lab04\Lab04\bin\Debug\Lab04.exe.config
+C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week4\Lab04\Lab04\bin\Debug\Lab04.exe
+C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week4\Lab04\Lab04\bin\Debug\Lab04.pdb
+C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week4\Lab04\Lab04\obj\Debug\Lab04.csproj.AssemblyReference.cache
+C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week4\Lab04\Lab04\obj\Debug\Lab04.Bai123.resources
+C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week4\Lab04\Lab04\obj\Debug\Lab04.Form1.resources
+C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week4\Lab04\Lab04\obj\Debug\Lab04.Properties.Resources.resources
+C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week4\Lab04\Lab04\obj\Debug\Lab04.csproj.GenerateResource.cache
+C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week4\Lab04\Lab04\obj\Debug\Lab04.csproj.CoreCompileInputs.cache
+C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week4\Lab04\Lab04\obj\Debug\Lab04.exe
+C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week4\Lab04\Lab04\obj\Debug\Lab04.pdb
+C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week4\Lab04\Lab04\bin\Debug\HtmlAgilityPack.dll
+C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week4\Lab04\Lab04\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week4\Lab04\Lab04\bin\Debug\HtmlAgilityPack.xml
+C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week4\Lab04\Lab04\obj\Debug\Lab04.csproj.Up2Date
