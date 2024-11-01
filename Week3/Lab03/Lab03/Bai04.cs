@@ -8,6 +8,7 @@ using System.Windows.Forms;
 using System.IO;
 using System.Drawing;
 using System.Linq;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Lab03
 {
@@ -129,36 +130,36 @@ namespace Lab03
                         catch { }
 
                     }
-                    else if (message.Contains("(TXT)"))
+                    else if (message.Contains("(PR.TXT)"))
                     {
-                        byte[] textSizeBytes = new byte[4];
-                        client.Receive(textSizeBytes);
-                        int textSize = BitConverter.ToInt32(textSizeBytes, 0);
+                        byte[] fileSizeBytes = new byte[4];
+                        client.Receive(fileSizeBytes);
+                        int fileSize = BitConverter.ToInt32(fileSizeBytes, 0);
 
-                        byte[] textData = new byte[textSize];
+                        // Nhận nội dung file từ client
+                        byte[] fileData = new byte[fileSize];
                         int totalReceived = 0;
-                        while (totalReceived < textSize)
+                        while (totalReceived < fileSize)
                         {
-                            int bytesReceived = client.Receive(textData, totalReceived, textSize - totalReceived, SocketFlags.None);
+                            int bytesReceived = client.Receive(fileData, totalReceived, fileSize - totalReceived, SocketFlags.None);
                             if (bytesReceived == 0) break;
                             totalReceived += bytesReceived;
                         }
-
-                        // Chuyển đổi nội dung văn bản sang UTF-8
-                        string fileContent = Encoding.UTF8.GetString(textData);
-                        AddMessage("Nội dung file .txt:\n" + fileContent);
-
-                        // Gửi nội dung tệp đến tất cả client
-                        byte[] contentBytes = Encoding.UTF8.GetBytes("(TXT) " + fileContent);
+                        string fileContent = Encoding.UTF8.GetString(fileData);
+                        AddMessage("Nội dung file .txt từ client:\n" + fileContent);
                         foreach (Socket item in clientList)
                         {
-                            if (item != client) // Không gửi lại cho client đã gửi
+                            if (item != client) 
                             {
-                                item.Send(contentBytes);
+                                item.Send(Encoding.UTF8.GetBytes("(TXT)"));
+
+                                byte[] textSizeBytes = BitConverter.GetBytes(fileContent.Length);
+                                item.Send(textSizeBytes);
+                                byte[] fileContentBytes = Encoding.UTF8.GetBytes(fileContent);
+                                item.Send(fileContentBytes);
                             }
                         }
                     }
-
 
                     else if (message.Contains("đã vào phòng") && client != null)
                     {
@@ -172,11 +173,9 @@ namespace Lab03
 
                         }
                         else clientList.Remove(client);
-
-                    }
+                                            }
                     else if (message.Contains("(IMG)"))
-                    {// Nhận kích thước ảnh
-
+                    {
                         byte[] imageSizeBytes = new byte[4];
                         client.Receive(imageSizeBytes);
                         int imageSize = BitConverter.ToInt32(imageSizeBytes, 0);
@@ -294,5 +293,9 @@ namespace Lab03
             return false;
         }
 
+        private void lv_Message_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

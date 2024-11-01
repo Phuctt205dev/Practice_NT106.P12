@@ -151,19 +151,26 @@ namespace Lab03_Clients
             }
                     else if (mess.Contains("(TXT)"))
                     {
+                        // Nhận kích thước dữ liệu tiếp theo từ server
                         byte[] textSizeBytes = new byte[4];
-                        client.Receive(textSizeBytes);
+                        client.Receive(textSizeBytes); // Nhận 4 byte kích thước file
                         int textSize = BitConverter.ToInt32(textSizeBytes, 0);
 
+                        // Nhận nội dung file
                         byte[] textData = new byte[textSize];
                         int totalReceived = 0;
                         while (totalReceived < textSize)
                         {
                             int bytesReceived = client.Receive(textData, totalReceived, textSize - totalReceived, SocketFlags.None);
-                            if (bytesReceived == 0) break;
+                            if (bytesReceived == 0)
+                            {
+                                MessageBox.Show("Kết nối bị gián đoạn khi nhận nội dung file.");
+                                break;
+                            }
                             totalReceived += bytesReceived;
                         }
 
+                        // Chuyển đổi nội dung file sang chuỗi UTF-8 và hiển thị
                         string fileContent = Encoding.UTF8.GetString(textData);
                         AddMess("Nội dung file .txt:\n" + fileContent);
                     }

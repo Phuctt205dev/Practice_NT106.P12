@@ -50,6 +50,7 @@
             this.lv_Message.TabIndex = 56;
             this.lv_Message.UseCompatibleStateImageBehavior = false;
             this.lv_Message.View = System.Windows.Forms.View.List;
+            this.lv_Message.SelectedIndexChanged += new System.EventHandler(this.lv_Message_SelectedIndexChanged);
             // 
             // label4
             // 
