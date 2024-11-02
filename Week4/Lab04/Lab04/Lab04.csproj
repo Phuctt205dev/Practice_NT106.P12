@@ -73,6 +73,30 @@
     <Compile Include="Bai6.Designer.cs">
       <DependentUpon>Bai6.cs</DependentUpon>
     </Compile>
+    <Compile Include="Bai6_AddFood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bai6_AddFood.Designer.cs">
+      <DependentUpon>Bai6_AddFood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bai6_Hint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bai6_Hint.Designer.cs">
+      <DependentUpon>Bai6_Hint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bai6_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bai6_Login.Designer.cs">
+      <DependentUpon>Bai6_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bai6_SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bai6_SignUp.Designer.cs">
+      <DependentUpon>Bai6_SignUp.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -19,3 +19,24 @@ C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week4\Lab04\Lab04\bin\Debug\Newt
 C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week4\Lab04\Lab04\bin\Debug\Newtonsoft.Json.Bson.pdb
 C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week4\Lab04\Lab04\bin\Debug\Newtonsoft.Json.Bson.xml
 C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week4\Lab04\Lab04\obj\Debug\Lab4.Bai5.resources
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week4\Lab04\Lab04\bin\Debug\Lab04.exe.config
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week4\Lab04\Lab04\bin\Debug\Lab04.exe
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week4\Lab04\Lab04\bin\Debug\Lab04.pdb
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week4\Lab04\Lab04\bin\Debug\HtmlAgilityPack.dll
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week4\Lab04\Lab04\bin\Debug\Newtonsoft.Json.Bson.dll
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week4\Lab04\Lab04\bin\Debug\Newtonsoft.Json.dll
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week4\Lab04\Lab04\bin\Debug\HtmlAgilityPack.pdb
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week4\Lab04\Lab04\bin\Debug\HtmlAgilityPack.xml
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week4\Lab04\Lab04\bin\Debug\Newtonsoft.Json.xml
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week4\Lab04\Lab04\bin\Debug\Newtonsoft.Json.Bson.pdb
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week4\Lab04\Lab04\bin\Debug\Newtonsoft.Json.Bson.xml
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week4\Lab04\Lab04\obj\Debug\Lab04.csproj.AssemblyReference.cache
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week4\Lab04\Lab04\obj\Debug\Lab04.Bai123.resources
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week4\Lab04\Lab04\obj\Debug\Lab4.Bai5.resources
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week4\Lab04\Lab04\obj\Debug\Lab04.Form1.resources
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week4\Lab04\Lab04\obj\Debug\Lab04.Properties.Resources.resources
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week4\Lab04\Lab04\obj\Debug\Lab04.csproj.GenerateResource.cache
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week4\Lab04\Lab04\obj\Debug\Lab04.csproj.CoreCompileInputs.cache
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week4\Lab04\Lab04\obj\Debug\Lab04.csproj.Up2Date
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week4\Lab04\Lab04\obj\Debug\Lab04.exe
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week4\Lab04\Lab04\obj\Debug\Lab04.pdb
