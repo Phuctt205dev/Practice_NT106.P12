@@ -165,7 +165,7 @@
             this.btnGetUserInfo.Name = "btnGetUserInfo";
             this.btnGetUserInfo.Size = new System.Drawing.Size(163, 51);
             this.btnGetUserInfo.TabIndex = 15;
-            this.btnGetUserInfo.Text = "button1";
+            this.btnGetUserInfo.Text = "USER ";
             this.btnGetUserInfo.UseVisualStyleBackColor = true;
             this.btnGetUserInfo.Click += new System.EventHandler(this.btnGetUserInfo_Click);
             // 
