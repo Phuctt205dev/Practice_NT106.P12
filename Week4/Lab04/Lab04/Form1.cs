@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Lab4;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,7 +26,7 @@ namespace Lab04
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Bai45 button2 = new Bai45();
+            Bai5 button2 = new Bai5();
             button2.ShowDialog();
         }
 

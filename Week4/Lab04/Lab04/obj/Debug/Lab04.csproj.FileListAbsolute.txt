@@ -13,3 +13,9 @@ C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week4\Lab04\Lab04\bin\Debug\Html
 C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week4\Lab04\Lab04\bin\Debug\HtmlAgilityPack.pdb
 C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week4\Lab04\Lab04\bin\Debug\HtmlAgilityPack.xml
 C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week4\Lab04\Lab04\obj\Debug\Lab04.csproj.Up2Date
+C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week4\Lab04\Lab04\bin\Debug\Newtonsoft.Json.dll
+C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week4\Lab04\Lab04\bin\Debug\Newtonsoft.Json.xml
+C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week4\Lab04\Lab04\bin\Debug\Newtonsoft.Json.Bson.dll
+C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week4\Lab04\Lab04\bin\Debug\Newtonsoft.Json.Bson.pdb
+C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week4\Lab04\Lab04\bin\Debug\Newtonsoft.Json.Bson.xml
+C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week4\Lab04\Lab04\obj\Debug\Lab4.Bai5.resources
