@@ -40,3 +40,8 @@ D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week4\Lab04\Lab04\obj\
 D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week4\Lab04\Lab04\obj\Debug\Lab04.csproj.Up2Date
 D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week4\Lab04\Lab04\obj\Debug\Lab04.exe
 D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week4\Lab04\Lab04\obj\Debug\Lab04.pdb
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week4\Lab04\Lab04\obj\Debug\Lab04.Bai6_AddFood.resources
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week4\Lab04\Lab04\obj\Debug\Lab04.Bai6_Hint.resources
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week4\Lab04\Lab04\obj\Debug\Lab04.Bai6_Login.resources
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week4\Lab04\Lab04\obj\Debug\Lab04.Bai6_SignUp.resources
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week4\Lab04\Lab04\obj\Debug\Lab04.Bai6.resources

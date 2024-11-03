@@ -111,6 +111,21 @@
     <EmbeddedResource Include="Bai45.resx">
       <DependentUpon>Bai45.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Bai6.resx">
+      <DependentUpon>Bai6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bai6_AddFood.resx">
+      <DependentUpon>Bai6_AddFood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bai6_Hint.resx">
+      <DependentUpon>Bai6_Hint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bai6_Login.resx">
+      <DependentUpon>Bai6_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bai6_SignUp.resx">
+      <DependentUpon>Bai6_SignUp.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

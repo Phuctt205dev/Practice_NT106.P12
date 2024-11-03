@@ -3,19 +3,11 @@
   "WorkspaceRootPath": "D:\\Files C# VS (Purple)\\Practice Class\\Practice_NT106.P12\\Week4\\Lab04\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A7586D7D-F8F2-48A8-8EEC-70187B4DE19F}|Lab04\\Lab04.csproj|d:\\files c# vs (purple)\\practice class\\practice_nt106.p12\\week4\\lab04\\lab04\\bai6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A7586D7D-F8F2-48A8-8EEC-70187B4DE19F}|Lab04\\Lab04.csproj|solutionrelative:lab04\\bai6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A7586D7D-F8F2-48A8-8EEC-70187B4DE19F}|Lab04\\Lab04.csproj|D:\\Files C# VS (Purple)\\Practice Class\\Practice_NT106.P12\\Week4\\Lab04\\lab04\\bai6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7586D7D-F8F2-48A8-8EEC-70187B4DE19F}|Lab04\\Lab04.csproj|solutionrelative:lab04\\bai6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7586D7D-F8F2-48A8-8EEC-70187B4DE19F}|Lab04\\Lab04.csproj|d:\\files c# vs (purple)\\practice class\\practice_nt106.p12\\week4\\lab04\\lab04\\bai6_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A7586D7D-F8F2-48A8-8EEC-70187B4DE19F}|Lab04\\Lab04.csproj|solutionrelative:lab04\\bai6_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7586D7D-F8F2-48A8-8EEC-70187B4DE19F}|Lab04\\Lab04.csproj|d:\\files c# vs (purple)\\practice class\\practice_nt106.p12\\week4\\lab04\\lab04\\bai6_signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A7586D7D-F8F2-48A8-8EEC-70187B4DE19F}|Lab04\\Lab04.csproj|solutionrelative:lab04\\bai6_signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7586D7D-F8F2-48A8-8EEC-70187B4DE19F}|Lab04\\Lab04.csproj|d:\\files c# vs (purple)\\practice class\\practice_nt106.p12\\week4\\lab04\\lab04\\bai6_addfood.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A7586D7D-F8F2-48A8-8EEC-70187B4DE19F}|Lab04\\Lab04.csproj|D:\\Files C# VS (Purple)\\Practice Class\\Practice_NT106.P12\\Week4\\Lab04\\lab04\\bai6_addfood.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A7586D7D-F8F2-48A8-8EEC-70187B4DE19F}|Lab04\\Lab04.csproj|solutionrelative:lab04\\bai6_addfood.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -23,8 +15,28 @@
       "RelativeMoniker": "D:0:0:{A7586D7D-F8F2-48A8-8EEC-70187B4DE19F}|Lab04\\Lab04.csproj|solutionrelative:lab04\\bai6_hint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7586D7D-F8F2-48A8-8EEC-70187B4DE19F}|Lab04\\Lab04.csproj|d:\\files c# vs (purple)\\practice class\\practice_nt106.p12\\week4\\lab04\\lab04\\bai6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7586D7D-F8F2-48A8-8EEC-70187B4DE19F}|Lab04\\Lab04.csproj|solutionrelative:lab04\\bai6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A7586D7D-F8F2-48A8-8EEC-70187B4DE19F}|Lab04\\Lab04.csproj|D:\\Files C# VS (Purple)\\Practice Class\\Practice_NT106.P12\\Week4\\Lab04\\lab04\\bai6_signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A7586D7D-F8F2-48A8-8EEC-70187B4DE19F}|Lab04\\Lab04.csproj|solutionrelative:lab04\\bai6_signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7586D7D-F8F2-48A8-8EEC-70187B4DE19F}|Lab04\\Lab04.csproj|d:\\files c# vs (purple)\\practice class\\practice_nt106.p12\\week4\\lab04\\lab04\\bai6_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7586D7D-F8F2-48A8-8EEC-70187B4DE19F}|Lab04\\Lab04.csproj|solutionrelative:lab04\\bai6_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7586D7D-F8F2-48A8-8EEC-70187B4DE19F}|Lab04\\Lab04.csproj|d:\\files c# vs (purple)\\practice class\\practice_nt106.p12\\week4\\lab04\\lab04\\bai6_signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7586D7D-F8F2-48A8-8EEC-70187B4DE19F}|Lab04\\Lab04.csproj|solutionrelative:lab04\\bai6_signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7586D7D-F8F2-48A8-8EEC-70187B4DE19F}|Lab04\\Lab04.csproj|D:\\Files C# VS (Purple)\\Practice Class\\Practice_NT106.P12\\Week4\\Lab04\\lab04\\bai6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A7586D7D-F8F2-48A8-8EEC-70187B4DE19F}|Lab04\\Lab04.csproj|solutionrelative:lab04\\bai6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7586D7D-F8F2-48A8-8EEC-70187B4DE19F}|Lab04\\Lab04.csproj|d:\\files c# vs (purple)\\practice class\\practice_nt106.p12\\week4\\lab04\\lab04\\bai6_addfood.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7586D7D-F8F2-48A8-8EEC-70187B4DE19F}|Lab04\\Lab04.csproj|solutionrelative:lab04\\bai6_addfood.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7586D7D-F8F2-48A8-8EEC-70187B4DE19F}|Lab04\\Lab04.csproj|D:\\Files C# VS (Purple)\\Practice Class\\Practice_NT106.P12\\Week4\\Lab04\\lab04\\bai6_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A7586D7D-F8F2-48A8-8EEC-70187B4DE19F}|Lab04\\Lab04.csproj|solutionrelative:lab04\\bai6_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,8 +46,22 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Bai6.cs",
+              "DocumentMoniker": "D:\\Files C# VS (Purple)\\Practice Class\\Practice_NT106.P12\\Week4\\Lab04\\Lab04\\Bai6.cs",
+              "RelativeDocumentMoniker": "Lab04\\Bai6.cs",
+              "ToolTip": "D:\\Files C# VS (Purple)\\Practice Class\\Practice_NT106.P12\\Week4\\Lab04\\Lab04\\Bai6.cs",
+              "RelativeToolTip": "Lab04\\Bai6.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwCsAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T15:48:44.359Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -46,7 +72,46 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Bai6_AddFood.cs",
+              "DocumentMoniker": "D:\\Files C# VS (Purple)\\Practice Class\\Practice_NT106.P12\\Week4\\Lab04\\Lab04\\Bai6_AddFood.cs",
+              "RelativeDocumentMoniker": "Lab04\\Bai6_AddFood.cs",
+              "ToolTip": "D:\\Files C# VS (Purple)\\Practice Class\\Practice_NT106.P12\\Week4\\Lab04\\Lab04\\Bai6_AddFood.cs",
+              "RelativeToolTip": "Lab04\\Bai6_AddFood.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAuwDMAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T10:16:38.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Bai6_SignUp.cs",
+              "DocumentMoniker": "D:\\Files C# VS (Purple)\\Practice Class\\Practice_NT106.P12\\Week4\\Lab04\\Lab04\\Bai6_SignUp.cs",
+              "RelativeDocumentMoniker": "Lab04\\Bai6_SignUp.cs",
+              "ToolTip": "D:\\Files C# VS (Purple)\\Practice Class\\Practice_NT106.P12\\Week4\\Lab04\\Lab04\\Bai6_SignUp.cs",
+              "RelativeToolTip": "Lab04\\Bai6_SignUp.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAD4vysAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T09:53:28.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "Bai6_Login.cs",
+              "DocumentMoniker": "D:\\Files C# VS (Purple)\\Practice Class\\Practice_NT106.P12\\Week4\\Lab04\\Lab04\\Bai6_Login.cs",
+              "RelativeDocumentMoniker": "Lab04\\Bai6_Login.cs",
+              "ToolTip": "D:\\Files C# VS (Purple)\\Practice Class\\Practice_NT106.P12\\Week4\\Lab04\\Lab04\\Bai6_Login.cs",
+              "RelativeToolTip": "Lab04\\Bai6_Login.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAYwDcAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T08:05:56.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Bai6_Hint.cs [Design]",
               "DocumentMoniker": "D:\\Files C# VS (Purple)\\Practice Class\\Practice_NT106.P12\\Week4\\Lab04\\Lab04\\Bai6_Hint.cs",
               "RelativeDocumentMoniker": "Lab04\\Bai6_Hint.cs",
@@ -58,7 +123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Bai6_AddFood.cs [Design]",
               "DocumentMoniker": "D:\\Files C# VS (Purple)\\Practice Class\\Practice_NT106.P12\\Week4\\Lab04\\Lab04\\Bai6_AddFood.cs",
               "RelativeDocumentMoniker": "Lab04\\Bai6_AddFood.cs",
@@ -70,7 +135,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Bai6_SignUp.cs [Design]",
               "DocumentMoniker": "D:\\Files C# VS (Purple)\\Practice Class\\Practice_NT106.P12\\Week4\\Lab04\\Lab04\\Bai6_SignUp.cs",
               "RelativeDocumentMoniker": "Lab04\\Bai6_SignUp.cs",
@@ -82,7 +147,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "Bai6_Login.cs [Design]",
               "DocumentMoniker": "D:\\Files C# VS (Purple)\\Practice Class\\Practice_NT106.P12\\Week4\\Lab04\\Lab04\\Bai6_Login.cs",
               "RelativeDocumentMoniker": "Lab04\\Bai6_Login.cs",
@@ -94,7 +159,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "Bai6.cs [Design]",
               "DocumentMoniker": "D:\\Files C# VS (Purple)\\Practice Class\\Practice_NT106.P12\\Week4\\Lab04\\Lab04\\Bai6.cs",
               "RelativeDocumentMoniker": "Lab04\\Bai6.cs",
@@ -103,19 +168,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-02T15:48:47.051Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Bai6.cs",
-              "DocumentMoniker": "D:\\Files C# VS (Purple)\\Practice Class\\Practice_NT106.P12\\Week4\\Lab04\\Lab04\\Bai6.cs",
-              "RelativeDocumentMoniker": "Lab04\\Bai6.cs",
-              "ToolTip": "D:\\Files C# VS (Purple)\\Practice Class\\Practice_NT106.P12\\Week4\\Lab04\\Lab04\\Bai6.cs",
-              "RelativeToolTip": "Lab04\\Bai6.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T15:48:44.359Z",
-              "EditorCaption": ""
             }
           ]
         }
