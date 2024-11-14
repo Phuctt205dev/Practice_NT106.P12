@@ -1,0 +1,10 @@
+D:\UIT\Hk3\NT106\Thực Hành\Lab05\Lab05\obj\Debug\Lab05.csproj.AssemblyReference.cache
+D:\UIT\Hk3\NT106\Thực Hành\Lab05\Lab05\obj\Debug\Lab05.Dashboard.resources
+D:\UIT\Hk3\NT106\Thực Hành\Lab05\Lab05\obj\Debug\Lab05.Properties.Resources.resources
+D:\UIT\Hk3\NT106\Thực Hành\Lab05\Lab05\obj\Debug\Lab05.csproj.GenerateResource.cache
+D:\UIT\Hk3\NT106\Thực Hành\Lab05\Lab05\obj\Debug\Lab05.csproj.CoreCompileInputs.cache
+D:\UIT\Hk3\NT106\Thực Hành\Lab05\Lab05\bin\Debug\Lab05.exe.config
+D:\UIT\Hk3\NT106\Thực Hành\Lab05\Lab05\bin\Debug\Lab05.exe
+D:\UIT\Hk3\NT106\Thực Hành\Lab05\Lab05\bin\Debug\Lab05.pdb
+D:\UIT\Hk3\NT106\Thực Hành\Lab05\Lab05\obj\Debug\Lab05.exe
+D:\UIT\Hk3\NT106\Thực Hành\Lab05\Lab05\obj\Debug\Lab05.pdb
