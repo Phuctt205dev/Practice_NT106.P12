@@ -17,12 +17,7 @@ namespace Lab05
             InitializeComponent();
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Bai03 button3 = new Bai03();
-            button3.ShowDialog();
-        }
-
+      
         private void button1_Click(object sender, EventArgs e)
         {
             Bai01 button1 = new Bai01();

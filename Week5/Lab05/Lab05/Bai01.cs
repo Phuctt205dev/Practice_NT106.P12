@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MailKit.Net.Smtp;
+using MimeKit;
+using System;
 using System.Windows.Forms;
 
 namespace Lab05
@@ -15,6 +10,32 @@ namespace Lab05
         public Bai01()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var message = new MimeMessage();
+                message.From.Add(new MailboxAddress("Tên người gửi", textBoxFrom.Text.Trim()));
+                message.To.Add(new MailboxAddress("Tên người nhận", textBoxTo.Text.Trim()));
+                message.Subject = textBoxSubject.Text.Trim();
+                message.Body = new TextPart("plain") { Text = richTextBoxBody.Text };
+
+                using (var client = new MailKit.Net.Smtp.SmtpClient())
+                {
+                    client.Connect("smtp.gmail.com", 465, true); // SSL
+                    client.Authenticate(textBoxFrom.Text.Trim(), "kttq roet bbaj onir");
+                    client.Send(message);
+                    client.Disconnect(true);
+                }
+
+                MessageBox.Show("Email đã gửi thành công!", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi gửi email: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

@@ -16,5 +16,10 @@ namespace Lab05
         {
             InitializeComponent();
         }
+
+        private void Bai04_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
