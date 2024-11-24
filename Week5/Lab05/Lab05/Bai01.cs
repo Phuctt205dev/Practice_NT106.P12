@@ -25,7 +25,7 @@ namespace Lab05
                 using (var client = new MailKit.Net.Smtp.SmtpClient())
                 {
                     client.Connect("smtp.gmail.com", 465, true); // SSL
-                    client.Authenticate(textBoxFrom.Text.Trim(), "kttq roet bbaj onir");
+                    client.Authenticate(textBoxFrom.Text.Trim(), "elcf yxpu aasi iptq");
                     client.Send(message);
                     client.Disconnect(true);
                 }

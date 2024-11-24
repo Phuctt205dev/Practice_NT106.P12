@@ -46,3 +46,41 @@ C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week5\Lab05\Lab05\bin\Debug\Syst
 C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week5\Lab05\Lab05\obj\Debug\Lab05.csproj.Up2Date
 C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week5\Lab05\Lab05\obj\Debug\Lab05.Bai02.resources
 C:\Users\PHUONG NGHI\Desktop\Practice_NT106.P12\Week5\Lab05\Lab05\obj\Debug\Lab05.Bai04.resources
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week5\Lab05\Lab05\bin\Debug\Lab05.exe.config
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week5\Lab05\Lab05\bin\Debug\Lab05.exe
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week5\Lab05\Lab05\bin\Debug\Lab05.pdb
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week5\Lab05\Lab05\bin\Debug\BouncyCastle.Cryptography.dll
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week5\Lab05\Lab05\bin\Debug\MailKit.dll
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week5\Lab05\Lab05\bin\Debug\MimeKit.dll
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week5\Lab05\Lab05\bin\Debug\System.Buffers.dll
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week5\Lab05\Lab05\bin\Debug\System.Formats.Asn1.dll
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week5\Lab05\Lab05\bin\Debug\System.Memory.dll
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week5\Lab05\Lab05\bin\Debug\System.Numerics.Vectors.dll
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week5\Lab05\Lab05\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week5\Lab05\Lab05\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week5\Lab05\Lab05\bin\Debug\System.ValueTuple.dll
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week5\Lab05\Lab05\bin\Debug\BouncyCastle.Cryptography.xml
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week5\Lab05\Lab05\bin\Debug\MailKit.pdb
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week5\Lab05\Lab05\bin\Debug\MailKit.xml
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week5\Lab05\Lab05\bin\Debug\MailKit.dll.config
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week5\Lab05\Lab05\bin\Debug\MimeKit.pdb
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week5\Lab05\Lab05\bin\Debug\MimeKit.xml
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week5\Lab05\Lab05\bin\Debug\MimeKit.dll.config
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week5\Lab05\Lab05\bin\Debug\System.Buffers.xml
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week5\Lab05\Lab05\bin\Debug\System.Formats.Asn1.xml
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week5\Lab05\Lab05\bin\Debug\System.Memory.xml
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week5\Lab05\Lab05\bin\Debug\System.Numerics.Vectors.xml
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week5\Lab05\Lab05\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week5\Lab05\Lab05\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week5\Lab05\Lab05\bin\Debug\System.ValueTuple.xml
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week5\Lab05\Lab05\obj\Debug\Lab05.csproj.AssemblyReference.cache
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week5\Lab05\Lab05\obj\Debug\Lab05.Bai01.resources
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week5\Lab05\Lab05\obj\Debug\Lab05.Bai02.resources
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week5\Lab05\Lab05\obj\Debug\Lab05.Bai04.resources
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week5\Lab05\Lab05\obj\Debug\Lab05.Dashboard.resources
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week5\Lab05\Lab05\obj\Debug\Lab05.Properties.Resources.resources
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week5\Lab05\Lab05\obj\Debug\Lab05.csproj.GenerateResource.cache
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week5\Lab05\Lab05\obj\Debug\Lab05.csproj.CoreCompileInputs.cache
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week5\Lab05\Lab05\obj\Debug\Lab05.csproj.Up2Date
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week5\Lab05\Lab05\obj\Debug\Lab05.exe
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week5\Lab05\Lab05\obj\Debug\Lab05.pdb
