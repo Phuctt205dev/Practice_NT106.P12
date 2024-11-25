@@ -146,6 +146,7 @@
             // 
             this.tbFilePath.Location = new System.Drawing.Point(141, 384);
             this.tbFilePath.Name = "tbFilePath";
+            this.tbFilePath.ReadOnly = true;
             this.tbFilePath.Size = new System.Drawing.Size(517, 22);
             this.tbFilePath.TabIndex = 11;
             // 
@@ -157,6 +158,7 @@
             this.btnBrowse.TabIndex = 12;
             this.btnBrowse.Text = "Browse ...";
             this.btnBrowse.UseVisualStyleBackColor = true;
+            this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
             // 
             // btnSend
             // 
