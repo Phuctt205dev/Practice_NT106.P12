@@ -35,5 +35,10 @@ namespace Lab05
             Bai04 button4 = new Bai04();
             button4.ShowDialog();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Not this way bro! This assignment has been merged with the second one :((", "Your move has been prevented!");
+        }
     }
 }
