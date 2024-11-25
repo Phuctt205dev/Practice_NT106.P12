@@ -84,3 +84,4 @@ D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week5\Lab05\Lab05\obj\
 D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week5\Lab05\Lab05\obj\Debug\Lab05.csproj.Up2Date
 D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week5\Lab05\Lab05\obj\Debug\Lab05.exe
 D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week5\Lab05\Lab05\obj\Debug\Lab05.pdb
+D:\Files C# VS (Purple)\Practice Class\Practice_NT106.P12\Week5\Lab05\Lab05\obj\Debug\Lab05.SendingMail_Bai04.resources
