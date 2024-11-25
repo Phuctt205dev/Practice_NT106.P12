@@ -102,6 +102,12 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="MailDetail_Bai04.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MailDetail_Bai04.Designer.cs">
+      <DependentUpon>MailDetail_Bai04.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SendingMail_Bai04.cs">
@@ -121,6 +127,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MailDetail_Bai04.resx">
+      <DependentUpon>MailDetail_Bai04.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

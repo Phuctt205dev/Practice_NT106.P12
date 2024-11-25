@@ -156,6 +156,7 @@
             this.txtPortSMTP.Name = "txtPortSMTP";
             this.txtPortSMTP.Size = new System.Drawing.Size(197, 22);
             this.txtPortSMTP.TabIndex = 10;
+            this.txtPortSMTP.Text = "465";
             // 
             // txtSMTP
             // 
@@ -163,6 +164,7 @@
             this.txtSMTP.Name = "txtSMTP";
             this.txtSMTP.Size = new System.Drawing.Size(197, 22);
             this.txtSMTP.TabIndex = 9;
+            this.txtSMTP.Text = "smtp.gmail.com";
             // 
             // txtPortIMAP
             // 
@@ -170,6 +172,7 @@
             this.txtPortIMAP.Name = "txtPortIMAP";
             this.txtPortIMAP.Size = new System.Drawing.Size(207, 22);
             this.txtPortIMAP.TabIndex = 8;
+            this.txtPortIMAP.Text = "993";
             // 
             // txtIMAP
             // 
@@ -177,6 +180,7 @@
             this.txtIMAP.Name = "txtIMAP";
             this.txtIMAP.Size = new System.Drawing.Size(207, 22);
             this.txtIMAP.TabIndex = 7;
+            this.txtIMAP.Text = "imap.gmail.com";
             // 
             // label5
             // 
@@ -223,6 +227,8 @@
             this.lstMailList.Size = new System.Drawing.Size(888, 304);
             this.lstMailList.TabIndex = 3;
             this.lstMailList.UseCompatibleStateImageBehavior = false;
+            this.lstMailList.ItemSelectionChanged += new System.Windows.Forms.ListViewItemSelectionChangedEventHandler(this.lstMailList_ItemSelectionChanged);
+            this.lstMailList.SelectedIndexChanged += new System.EventHandler(this.lstMailList_SelectedIndexChanged);
             // 
             // Bai04
             // 
